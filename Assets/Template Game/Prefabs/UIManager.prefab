@@ -66,55 +66,6 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!1 &1477062994856508986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3021126435897304502}
-  - component: {fileID: 5261195350511261823}
-  m_Layer: 5
-  m_Name: Rec
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3021126435897304502
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477062994856508986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6557138127491841528}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5261195350511261823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477062994856508986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 242929be0d940aa4e9a9f7498faa99e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recordables: []
 --- !u!1 &6557138126523084213
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +185,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5261195350511261823}
+      - m_Target: {fileID: 0}
         m_MethodName: ChangeState
         m_Mode: 3
         m_Arguments:
@@ -490,7 +441,6 @@ RectTransform:
   - {fileID: 6557138127645150827}
   - {fileID: 6557138127946300515}
   - {fileID: 2137103289}
-  - {fileID: 3021126435897304502}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -573,10 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reset: {fileID: 0}
   playGame: {fileID: 6557138128018819615}
-  record: {fileID: 0}
   pause: {fileID: 0}
-  rewind: {fileID: 0}
-  stop: {fileID: 0}
   panelWin: {fileID: 0}
   panelControls: {fileID: 6557138127645150826}
   panelMenu: {fileID: 6557138127946300514}

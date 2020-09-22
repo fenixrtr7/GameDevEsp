@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &132149809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6557138126523084211, guid: 1c35b02f38236e847b19b40490640978,
+    type: 3}
+  m_PrefabInstance: {fileID: 6557138128160002990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &532743477
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,11 +295,11 @@ RectTransform:
   m_Children:
   - {fileID: 1708842953}
   m_Father: {fileID: 877667229}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2, y: -10.1}
+  m_AnchoredPosition: {x: -2, y: -10.099976}
   m_SizeDelta: {x: 12.130676, y: -99.091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &877667229 stripped
@@ -838,6 +850,11 @@ PrefabInstance:
       propertyPath: panelWin
       value: 
       objectReference: {fileID: 844948882}
+    - target: {fileID: 6557138127491841529, guid: 1c35b02f38236e847b19b40490640978,
+        type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 132149809}
     - target: {fileID: 6557138127491841530, guid: 1c35b02f38236e847b19b40490640978,
         type: 3}
       propertyPath: m_UiScaleMode
@@ -853,10 +870,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6557138127645150826, guid: 1c35b02f38236e847b19b40490640978,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel InGame
+      objectReference: {fileID: 0}
     - target: {fileID: 6557138127772792927, guid: 1c35b02f38236e847b19b40490640978,
         type: 3}
       propertyPath: m_Text
       value: Rewind (E)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557138127946300515, guid: 1c35b02f38236e847b19b40490640978,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.099976
       objectReference: {fileID: 0}
     - target: {fileID: 6557138128135275658, guid: 1c35b02f38236e847b19b40490640978,
         type: 3}
