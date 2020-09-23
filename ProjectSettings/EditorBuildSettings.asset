@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game DEV JAM/Scene/0_Menu.unity
+    path: Assets/--Game DEV JAM/Scene/0_Menu.unity
     guid: 68ffb4ce3303bc2488e0ac6355a45998
   - enabled: 1
-    path: Assets/Game DEV JAM/Scene/Level1.unity
+    path: Assets/--Game DEV JAM/Scene/Level1.unity
     guid: e2df89b7dbc73e7408cd00a0fb1ec42c
   m_configObjects: {}
