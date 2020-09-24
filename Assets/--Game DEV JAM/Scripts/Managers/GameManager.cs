@@ -25,31 +25,19 @@ public class GameManager : Manager<GameManager>
     {
         get { return _currentGameState; }
         set { _currentGameState = value; }
-
-    // private int _points;
-    // public int Points
-    // {
-    //     get { return _points; }
-    //     set { _points = value; }
     }
 
     private void Start()
     {
-        //Debug.Log("Number of scenes: " + SceneManager.sceneCountInBuildSettings);
-
         DontDestroyOnLoad(gameObject);
 
         currentLevel = SceneManager.GetActiveScene().buildIndex;
         numberScenes = SceneManager.sceneCountInBuildSettings - 1;
-
-        //Debug.Log("number Scenes: " + numberScenes + "current Level: " + currentLevel);
     }
 
     public void StarGame()
     {
         UpdateState(GameState.RUNNING);
-        UIManager.Instance.ActivePanelControls();
-        NextLevel();
     }
 
 
