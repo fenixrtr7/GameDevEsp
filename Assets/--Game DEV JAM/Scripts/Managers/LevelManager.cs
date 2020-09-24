@@ -17,22 +17,22 @@ public class LevelManager : Manager<LevelManager>
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            RecPlay.Instance.ChangeState(1);
+            //RecPlay.Instance.ChangeState(1);
         }
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            RecPlay.Instance.ChangeState(4);
+            //RecPlay.Instance.ChangeState(4);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            RecPlay.Instance.ChangeState(5);
+            //RecPlay.Instance.ChangeState(5);
         }
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            RecPlay.Instance.ChangeState(3);
+            //RecPlay.Instance.ChangeState(3);
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -47,7 +47,7 @@ public class LevelManager : Manager<LevelManager>
 
         if (keys.Count == 0)
         {
-            goal.GetComponent<Goal>().OnGoal();
+            //goal.GetComponent<Goal>().OnGoal();
         }
     }
 
@@ -59,6 +59,6 @@ public class LevelManager : Manager<LevelManager>
              keys.Add(key);
         }
 
-        RecPlay.Instance.ChangeState(3);
+        //RecPlay.Instance.ChangeState(3);
     }
 }
