@@ -18,6 +18,15 @@ public class ArrowControl : MonoBehaviour
     public TypeArrow typeArrow;
     bool isInArrow = false;
     int contador = 0;
+    public int damage = 1;
+    LifePlayer lifePlayer;
+    LifeEnemy lifeEnemy;
+    [SerializeField] bool isEspecial = false;
+
+    private void Start() {
+        lifePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<LifePlayer>();
+        lifeEnemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<LifeEnemy>();
+    }
 
     void FixedUpdate()
     {
@@ -38,42 +47,95 @@ public class ArrowControl : MonoBehaviour
             isInArrow = false;
         }
 
-
         if (Input.GetKeyDown(KeyCode.DownArrow) && typeArrow == TypeArrow.DOWN)
         {
-            if (isInArrow)
-            {
-                Debug.Log("Punto");
-                gameObject.SetActive(false);
-            }
+            ConditionKey();
         }
-
-        if (Input.GetKeyDown(KeyCode.UpArrow) && typeArrow == TypeArrow.UP)
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && typeArrow == TypeArrow.UP)
         {
-            if (isInArrow)
-            {
-                Debug.Log("Punto");
-                gameObject.SetActive(false);
-            }
+            ConditionKey();
         }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow) && typeArrow == TypeArrow.RIGHT)
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && typeArrow == TypeArrow.RIGHT)
         {
-            if (isInArrow)
-            {
-                Debug.Log("Punto");
-                gameObject.SetActive(false);
-            }
+            ConditionKey();
         }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && typeArrow == TypeArrow.LEFT)
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && typeArrow == TypeArrow.LEFT)
         {
-            if (isInArrow)
+            ConditionKey();
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.UP) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.DOWN) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.RIGHT) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.UP) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.DOWN) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.LEFT) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.UP) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.RIGHT) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.LEFT) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.LEFT) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.RIGHT) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.DOWN) && isInArrow)
+        {
+            lifePlayer.QuitLife(damage);
+            gameObject.SetActive(false);            
+        }
+    }
+
+    void ConditionKey()
+    {
+        if (isInArrow)
             {
-                Debug.Log("Punto");
+                //Debug.Log("Punto");
+                if (isEspecial)
+                {
+                    lifeEnemy.QuitLife(damage);
+                }
                 gameObject.SetActive(false);
             }
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -85,6 +147,7 @@ public class ArrowControl : MonoBehaviour
 
         if(other.CompareTag("Player"))
         {
+            other.GetComponent<LifePlayer>().QuitLife(damage);
             gameObject.SetActive(false);
         }
     }

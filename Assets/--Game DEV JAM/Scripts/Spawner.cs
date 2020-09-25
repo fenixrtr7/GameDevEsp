@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : Manager<Spawner>
 {
     [SerializeField] GameObject[] arrows;
-    float timeToSpawn = 3;
+    [SerializeField]float timeToSpawn = 3;
     // Start is called before the first frame update
     void Start()
     {
