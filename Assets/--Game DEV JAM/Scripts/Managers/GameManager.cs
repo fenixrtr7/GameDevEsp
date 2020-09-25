@@ -7,7 +7,7 @@ using System;
 
 public class GameManager : Manager<GameManager>
 {
-    public int currentLevel = 1;
+    //public int currentLevel = 1;
     public enum GameState
     {
         MENU,
@@ -19,7 +19,7 @@ public class GameManager : Manager<GameManager>
     public Events.EventGameState OnGameStateChanged;
 
     GameState _currentGameState = GameState.MENU;
-    int numberScenes;
+    //int numberScenes;
 
     public GameState CurrentGameState
     {
@@ -31,13 +31,14 @@ public class GameManager : Manager<GameManager>
     {
         DontDestroyOnLoad(gameObject);
 
-        currentLevel = SceneManager.GetActiveScene().buildIndex;
-        numberScenes = SceneManager.sceneCountInBuildSettings - 1;
+        // currentLevel = SceneManager.GetActiveScene().buildIndex;
+        // numberScenes = SceneManager.sceneCountInBuildSettings - 1;
     }
 
     public void StarGame()
     {
         UpdateState(GameState.RUNNING);
+        StartCoroutine(Spawner.Instance.SpawnArrow());
     }
 
 
@@ -97,31 +98,31 @@ public class GameManager : Manager<GameManager>
         SceneManager.LoadScene(num);
     }
 
-    public void NextLevel()
-    {
-        //Debug.Log("number Scenes: " + numberScenes + "current Level: " + currentLevel);
+    // public void NextLevel()
+    // {
+    //     //Debug.Log("number Scenes: " + numberScenes + "current Level: " + currentLevel);
 
-        if (numberScenes == currentLevel)
-        {
-            StartCoroutine(UIManager.Instance.WinPanel());
-            // Win
-            //Debug.Log("win");
-            currentLevel = 0;
-            GoMenu();
-            ChangeScene(currentLevel);
-            // On win and send menu
-        }
-        else
-        {
-            currentLevel++;
-            ChangeScene(currentLevel);
-        }
+    //     if (numberScenes == currentLevel)
+    //     {
+    //         StartCoroutine(UIManager.Instance.WinPanel());
+    //         // Win
+    //         //Debug.Log("win");
+    //         currentLevel = 0;
+    //         GoMenu();
+    //         ChangeScene(currentLevel);
+    //         // On win and send menu
+    //     }
+    //     else
+    //     {
+    //         currentLevel++;
+    //         ChangeScene(currentLevel);
+    //     }
 
-    }
+    // }
 
     public void ResetLevel()
     {
-        ChangeScene(currentLevel);
+        ChangeScene(SceneManager.GetActiveScene().name);
     }
 }
 
