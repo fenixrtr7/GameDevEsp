@@ -33,6 +33,8 @@ public class ProgressBar : MonoBehaviour
     private AudioSource audiosource;
     private Text txtTitle;
     private float barValue;
+
+    public float limitValue = 100;
     public float BarValue
     {
         get { return barValue; }
@@ -42,7 +44,6 @@ public class ProgressBar : MonoBehaviour
             value = Mathf.Clamp(value, 0, 100);
             barValue = value;
             UpdateValue(barValue);
-
         }
     }
 
@@ -69,13 +70,11 @@ public class ProgressBar : MonoBehaviour
         barBackground.sprite = BarBackGroundSprite;
 
         UpdateValue(barValue);
-
-
     }
 
     void UpdateValue(float val)
     {
-        bar.fillAmount = val / 100;
+        bar.fillAmount = val / limitValue;
         txtTitle.text = Title + " " + val + "%";
 
         if (Alert >= val)
@@ -88,7 +87,6 @@ public class ProgressBar : MonoBehaviour
         }
 
     }
-
 
     private void Update()
     {

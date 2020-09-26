@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBox : MonoBehaviour
+public class LevelManager : Manager<LevelManager>
 {
     
     // Start is called before the first frame update
@@ -11,5 +11,11 @@ public class PlayerBox : MonoBehaviour
         
     }
 
-    
+    // Update is called once per frame
+    void Update()
+    {
+        
+
+        
+    }
 }

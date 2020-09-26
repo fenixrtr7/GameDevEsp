@@ -43,10 +43,13 @@ public class test : MonoBehaviour
             });
         });
         newSequence.AppendInterval(1f);
+        
         newSequence.AppendCallback(() =>
         {
             Debug.Log("3");
         });
-        
+        newSequence.SetLoops(-1, LoopType.Restart);
+
+
     }
 }

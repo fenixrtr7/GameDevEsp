@@ -35,10 +35,19 @@ public class GameManager : Manager<GameManager>
         // numberScenes = SceneManager.sceneCountInBuildSettings - 1;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ResetLevel();
+        }
+    }
+
     public void StarGame()
     {
         UpdateState(GameState.RUNNING);
-        StartCoroutine(Spawner.Instance.SpawnArrow());
+        //StartCoroutine(Spawner.Instance.SpawnArrow());
+        StartCoroutine(Spawner.Instance.SpawnArrowDuel());
     }
 
 

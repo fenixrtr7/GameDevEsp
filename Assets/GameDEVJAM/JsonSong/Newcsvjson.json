@@ -1,0 +1,14 @@
+n{
+    "listData": [
+        {
+            "timestamp": "1",
+            "direction": "r",
+            "special": "0"
+        },
+        {
+            "timestamp": "1",
+            "direction": "r",
+            "special": "1"
+        }
+    ]
+}

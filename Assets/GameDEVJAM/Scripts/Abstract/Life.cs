@@ -11,9 +11,10 @@ public abstract class Life : MonoBehaviour
         Init();
     }
 
-    public void Init()
+    public virtual void Init()
     {
         progressBar.BarValue = life;
+        progressBar.limitValue = life;
     }
     
     public void QuitLife(int damage)

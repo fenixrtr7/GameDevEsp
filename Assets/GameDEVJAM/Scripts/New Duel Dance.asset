@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c995a14e0f0190a419717b6e5af1b910, type: 3}
+  m_Name: New Duel Dance
+  m_EditorClassIdentifier: 
+  keys:
+  - direction: 1
+    tempo: 1
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 2
+    tempo: 3
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 4
+    tempo: 5
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 3
+    tempo: 10
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 0
+    tempo: 0
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  damage: 1
