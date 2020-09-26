@@ -10,15 +10,14 @@ public class EventController : MonoBehaviour
     public bool autoProgressDialogPhase;
     private string _dynamicID;
     
-    // Start is called before the first frame update
     void Start()
     {
         _dynamicID = EventManager.Instance.AddDynamicObject(this.name, this.gameObject, this);
     }
 
-    public void OnDialogCalled()
+    public void OnActionCalled(EEventType eventToChange)
     {
-        if (eCurrentEvent == EEventType.chat)
+        if (eCurrentEvent == eventToChange)
             return;
         EEventType prevEvent = eCurrentEvent;
         eCurrentEvent = EEventType.chat;
@@ -48,8 +47,8 @@ public class EventController : MonoBehaviour
         public EventController objConnected;
         public EEventTrigger trigger;
         public EEventAction action;
-        //public EEventType eventTriggered;
-        //public EEventType eventToChange;
+        public EEventType eventTriggered;
+        public EEventType eventToChange;
 
         public void UpdateEventTrigger()
         {
@@ -72,4 +71,5 @@ public class EventController : MonoBehaviour
         public float timeInSecs;
         public EEventTimerAction action;
     }
+
 }

@@ -7,7 +7,7 @@ public class EventManager : Manager<EventManager>
 {
     public int intsForDynamicIDs;
     private Dictionary<string, DynamicObject> dic_dynamicObjects;
-    void Awake()
+    private void Awake()
     {
         intsForDynamicIDs = -1;
     }
@@ -16,7 +16,10 @@ public class EventManager : Manager<EventManager>
     {
         foreach (KeyValuePair<string, DynamicObject> obj in dic_dynamicObjects)
         {
+            if (dic_dynamicObjects[obj.Key].)
+            {
 
+            }
         }
     }
 
@@ -67,16 +70,18 @@ public class EventManager : Manager<EventManager>
         return intsForDynamicIDs;
     }
 
-}
-
-public class DynamicObject
-{
-    GameObject obj;
-    EventController controller;
-
-    public DynamicObject (GameObject _obj, EventController _controller)
+    [System.Serializable]
+    public class DynamicObject
     {
-        obj = _obj;
-        controller = _controller;
+        public GameObject obj;
+        public EventController controller;
+
+        public DynamicObject(GameObject _obj, EventController _controller)
+        {
+            obj = _obj;
+            controller = _controller;
+        }
     }
 }
+
+
