@@ -21,7 +21,7 @@ public class ArrowControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (GameManager.Instance.CurrentGameState == GameManager.GameState.RUNNING)
+        if (GameManager.Instance.CurrentGameState == GameManager.GameState.COMBAT)
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }

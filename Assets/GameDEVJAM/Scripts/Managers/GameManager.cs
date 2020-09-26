@@ -13,7 +13,8 @@ public class GameManager : Manager<GameManager>
         MENU,
         RUNNING,
         PAUSED,
-        GAMEOVER
+        GAMEOVER,
+        COMBAT
     }
 
     public Events.EventGameState OnGameStateChanged;
@@ -57,7 +58,7 @@ public class GameManager : Manager<GameManager>
     }
     public void ButtonMechanciStart()
     {
-        UpdateState(GameState.RUNNING);
+        UpdateState(GameState.COMBAT);
         //StartCoroutine(Spawner.Instance.SpawnArrow());
         StartCoroutine(Spawner.Instance.SpawnArrowDuel());
     }
@@ -99,6 +100,10 @@ public class GameManager : Manager<GameManager>
                 break;
 
             case GameState.GAMEOVER:
+                Time.timeScale = 1.0f;
+                break;
+
+            case GameState.COMBAT:
                 Time.timeScale = 1.0f;
                 break;
 
