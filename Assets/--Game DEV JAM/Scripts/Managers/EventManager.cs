@@ -16,10 +16,10 @@ public class EventManager : Manager<EventManager>
     {
         foreach (KeyValuePair<string, DynamicObject> obj in dic_dynamicObjects)
         {
-            if (dic_dynamicObjects[obj.Key].)
-            {
+            //if (dic_dynamicObjects[obj.Key].)
+            //{
 
-            }
+            //}
         }
     }
 
