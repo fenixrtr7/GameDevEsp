@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using DG.Tweening;
-using System;
 
 public class NPCController : MonoBehaviour
 {
@@ -20,7 +19,7 @@ public class NPCController : MonoBehaviour
     [SerializeField]
     private NavMeshCoordi[] navMeshCoordinates;
 
-    [Serializable]
+    [System.Serializable]
     private class NavMeshCoordi
     {
         public Vector2 axisXRange;
@@ -42,7 +41,7 @@ public class NPCController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        characterSprite.rotation = Quaternion.Euler(0,0,0);
+        characterSprite.rotation = Quaternion.Euler(0, 0, 0);
 
         if (Vector3.Distance(transform.position, targetPosition) < 0.3)
             isMoving = false;
@@ -79,13 +78,13 @@ public class NPCController : MonoBehaviour
 
     private void GetNewAction()
     {
-        
+
         newSequ.AppendCallback(() =>
         {
-            switch(UnityEngine.Random.Range(1, 3))
+            switch (UnityEngine.Random.Range(1, 3))
             {
                 case 1:
-                    if(randomMovement)
+                    if (randomMovement)
                         MoveCharacterTo(GetNewRandomPosition());
                     break;
                 case 2:
@@ -93,13 +92,13 @@ public class NPCController : MonoBehaviour
                     break;
             }
         });
-        newSequ.AppendInterval(UnityEngine.Random.Range(rangeTimer.x,rangeTimer.y));
+        newSequ.AppendInterval(UnityEngine.Random.Range(rangeTimer.x, rangeTimer.y));
         newSequ.AppendCallback(() =>
         {
             //Set idle animation
         });
         newSequ.SetLoops(-1, LoopType.Restart);
-        
+
     }
 
     public void MoveCharacterTo(Vector3 newPos)

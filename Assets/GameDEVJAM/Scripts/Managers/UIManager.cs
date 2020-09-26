@@ -85,4 +85,15 @@ public class UIManager : Manager<UIManager>
         panelMenu.SetActive(true);
         yield return null;
     }
+
+    public void ShowTriggerMessage(string message)
+    {
+        UI_Items.Instance.freeExplorationItems.txtTriggerMessage.gameObject.SetActive(true);
+        UI_Items.Instance.freeExplorationItems.txtTriggerMessage.text = message;
+    }
+
+    public void HideTriggerMessage()
+    {
+        UI_Items.Instance.freeExplorationItems.txtTriggerMessage.gameObject.SetActive(false);
+    }
 }
