@@ -22,9 +22,9 @@ public class AudioManager : Manager<AudioManager>
     public Dictionary<string, AudioSource> dic_Audio;
     GameObject[] audioListObjects;
 
-     void Start()
+    void Start()
     {
-     
+        InitializeManager();
     }
 
     public void InitializeManager()
