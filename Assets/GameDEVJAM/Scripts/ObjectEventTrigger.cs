@@ -15,7 +15,7 @@ public class ObjectEventTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!eventController && Input.GetButtonDown("Jump"))
+        if (eventController && Input.GetButtonDown("Jump"))
         {
             Debug.Log("Interactuar");
             eventController.OnActionCalled(EEventType.battle);
