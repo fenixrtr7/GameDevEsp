@@ -2,55 +2,57 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum EEventType { idle, battle, deafeated, chat};
+[System.Serializable]
+public enum EEventType { idle, battle, deafeated, chat, walking, none};
 public class EventManager : Manager<EventManager>
 {
     public int intsForDynamicIDs;
-    private Dictionary<string, DynamicObject> dic_dynamicObjects;
+    public Dictionary<string, DynamicObject> dic_dynamicObjects;
     private void Awake()
     {
         intsForDynamicIDs = -1;
     }
 
-    public void UpdateEvent(string objID, EEventType prevEvent, EEventType nextEvent)
+    public void UpdateEvent(string objID, EEventType prevEvent = EEventType.none, EEventType nextEvent = EEventType.none)
     {
         foreach (KeyValuePair<string, DynamicObject> obj in dic_dynamicObjects)
         {
-            //if (dic_dynamicObjects[obj.Key].)
-            //{
-
-            //}
+            if (nextEvent == EEventType.deafeated && obj.Value.controller.autoProgressDialogPhase)
+                dic_dynamicObjects[obj.Key].controller.dialogSequence.phase++;
+            if (obj.Value.controller.objInteractions == null)
+                continue;
+            IterateOnInteractions(obj, prevEvent, nextEvent);
         }
     }
 
-    private void UnlockNextDuel()
+    private void IterateOnInteractions(KeyValuePair<string, DynamicObject> obj, EEventType prevEvent, EEventType nextEvent)
     {
-
+        foreach (EventController.Interaction inter in obj.Value.controller.objInteractions)
+        {
+            if (inter.trigger == EventController.Interaction.EEventTrigger.onChagedEvent && inter.eventTriggered == nextEvent
+                || inter.trigger == EventController.Interaction.EEventTrigger.onDialogPhaseShown && prevEvent == EEventType.chat
+                || inter.trigger == EventController.Interaction.EEventTrigger.onEnemyDefeated && nextEvent == EEventType.deafeated
+                || inter.trigger == EventController.Interaction.EEventTrigger.onInteracted && prevEvent == EEventType.none && nextEvent == EEventType.none
+                || inter.trigger == EventController.Interaction.EEventTrigger.onObjEnabled && prevEvent == EEventType.none
+                || inter.trigger == EventController.Interaction.EEventTrigger.onObjDisabled && nextEvent == EEventType.none)
+                ActivateActions(inter, obj, nextEvent);
+        }
     }
 
-    private void UnlockNextDialog()
+    private void ActivateActions(EventController.Interaction inter, KeyValuePair<string, DynamicObject> obj, EEventType nextEvent)
     {
-
-    }
-
-    private void UnlockNextDialogPhase()
-    {
-
-    }
-
-    private void DisableOffCameras()
-    {
-
-    }
-
-    private void EnableOffCameras()
-    {
-
-    }
-
-    private void ChangeEvent(EEventType eventToSet)
-    {
-
+        if (inter.action == EventController.Interaction.EEventAction.changeEvent)
+            obj.Value.controller.OnActionCalled(nextEvent);
+        else if (inter.action == EventController.Interaction.EEventAction.unlockNextDialog)
+            dic_dynamicObjects[obj.Key].controller.dialogSequence.phase++;
+        else if (inter.action == EventController.Interaction.EEventAction.unlockDuel)
+            dic_dynamicObjects[obj.Key].controller.duelActive = true;
+        else if (inter.action == EventController.Interaction.EEventAction.disableSelfOffCameras || inter.action == EventController.Interaction.EEventAction.enableSelfOffCameras)
+            dic_dynamicObjects[obj.Key].controller.enableOrDisableSelf = true;
+        else if (inter.action == EventController.Interaction.EEventAction.followPlayer)
+            dic_dynamicObjects[obj.Key].controller.followPlayer = true;
+        else if (inter.action == EventController.Interaction.EEventAction.moveTowardsPoint)
+            dic_dynamicObjects[obj.Key].controller.FollowPoint();
     }
 
     public string AddDynamicObject(string name, GameObject obj, EventController controller)
@@ -73,12 +75,12 @@ public class EventManager : Manager<EventManager>
     [System.Serializable]
     public class DynamicObject
     {
-        public GameObject obj;
+        public GameObject objectRelated;
         public EventController controller;
 
-        public DynamicObject(GameObject _obj, EventController _controller)
+        public DynamicObject(GameObject _objectRelated, EventController _controller)
         {
-            obj = _obj;
+            objectRelated = _objectRelated;
             controller = _controller;
         }
     }
