@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerBox : MonoBehaviour
 {
-    bool isInArrow = false;
+    bool isInBox = false;
     int contador = 0;
     LifePlayer lifePlayer;
     LifeEnemy lifeEnemy;
     TypeArrow typeArrow = TypeArrow.NONE;
-    DuelDance duelDance;
+    ArrowSongDirections arrowSongDirections;
     ArrowControl currentArrow;
     // Start is called before the first frame update
     void Start()
@@ -17,27 +17,28 @@ public class PlayerBox : MonoBehaviour
         lifePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<LifePlayer>();
         lifeEnemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<LifeEnemy>();
 
-        duelDance = Spawner.Instance.duel;
+        arrowSongDirections = Spawner.Instance.duel;
     }
 
     private void Update()
     {
         if (contador == 2)
         {
-            isInArrow = true;
+            isInBox = true;
         }
         else
         {
-            isInArrow = false;
+            isInBox = false;
         }
 
         if (typeArrow != TypeArrow.NONE)
         {
-
+            //Debug.Log("Pasamos");
             if (Input.GetKeyDown(KeyCode.DownArrow) && typeArrow == TypeArrow.DOWN)
             {
                 ConditionKey();
             }
+
             else if (Input.GetKeyDown(KeyCode.UpArrow) && typeArrow == TypeArrow.UP)
             {
                 ConditionKey();
@@ -50,65 +51,66 @@ public class PlayerBox : MonoBehaviour
             {
                 ConditionKey();
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.UP) && isInArrow)
+
+            else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.UP) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
                 
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.DOWN) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.DOWN) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.RIGHT) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.LeftArrow) && (typeArrow == TypeArrow.RIGHT) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.UP) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.UP) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.DOWN) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.DOWN) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.LEFT) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.RightArrow) && (typeArrow == TypeArrow.LEFT) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.UP) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.UP) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.RIGHT) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.RIGHT) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.LEFT) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.DownArrow) && (typeArrow == TypeArrow.LEFT) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.LEFT) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.LEFT) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.RIGHT) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.RIGHT) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.DOWN) && isInArrow)
+            else if (Input.GetKeyDown(KeyCode.UpArrow) && (typeArrow == TypeArrow.DOWN) && isInBox)
             {
-                lifePlayer.QuitLife(duelDance.damage);
+                lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
             }
         }
@@ -116,14 +118,14 @@ public class PlayerBox : MonoBehaviour
 
     void ConditionKey()
     {
-        Debug.Log("Cool");
-        if (isInArrow)
+        //Debug.Log("Cool");
+        if (isInBox)
         {
-            Debug.Log("Punto");
+            //Debug.Log("Punto");
 
             if (currentArrow.isEspecial)
             {
-                lifeEnemy.QuitLife(duelDance.damage);
+                lifeEnemy.QuitLife(arrowSongDirections.damage);
             }
             currentArrow.gameObject.SetActive(false);
         }
@@ -142,8 +144,6 @@ public class PlayerBox : MonoBehaviour
                 Debug.Log("Arrow " + typeArrow);
             }
         }
-
-
     }
 
     private void OnTriggerExit2D(Collider2D other)

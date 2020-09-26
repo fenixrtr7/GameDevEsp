@@ -639,7 +639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &701619230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,6 +966,16 @@ MonoBehaviour:
   - {fileID: 6355536587740374039, guid: bceafb984e9c688478ee8e9d482cbd5a, type: 3}
   timeToSpawn: 0.5
   duel: {fileID: 11400000, guid: ad066c1839aaafa4094092b597d4bd37, type: 2}
+  arrowObj:
+  - {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6, type: 3}
+  - {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b, type: 3}
+  - {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca, type: 3}
+  - {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83, type: 3}
+  arrowObjS:
+  - {fileID: 6355536587740374039, guid: bceafb984e9c688478ee8e9d482cbd5a, type: 3}
+  - {fileID: 6770352053738344932, guid: 3702452b8d39b5f40b1d851ff2d2a71b, type: 3}
+  - {fileID: 4107777445074303577, guid: 3e5d31529d435284cb32c68a3b088bd6, type: 3}
+  - {fileID: 2409445597474478232, guid: 3efa6bfbf02206f42834a350283f82e5, type: 3}
 --- !u!1 &1182943791
 GameObject:
   m_ObjectHideFlags: 0
