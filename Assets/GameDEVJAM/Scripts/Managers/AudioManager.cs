@@ -14,21 +14,42 @@ FindObjectOfType<AudioManager>().Play("XXXXXXXXX");
 FindObjectOfType<AudioManager>().Pause("XXXXXXXXX");
 Donde XXXX equivale al nombre del audio para reproducir o eliminar
 */
-public class AudioManager : MonoBehaviour
+public class AudioManager : Manager<AudioManager>
 {
     //public Sound[] sounds;
     public Sound[] sounds;
     public static AudioManager instance;
+    public Dictionary<string, AudioSource> dic_Audio;
+    GameObject[] audioListObjects;
 
-    void Awake()
+     void Start()
+    {
+     
+    }
+
+    public void InitializeManager()
     {
         AvoidDuplicate();
         DontDestroyOnLoad(gameObject);
-
-        foreach (Sound snd in sounds)
+        audioListObjects = GameObject.FindGameObjectsWithTag("Audio");//new List<AudioSource>();
+        dic_Audio = new Dictionary<string, AudioSource>();
+        for (int i = 0; i < audioListObjects.Length; i++)
         {
-            snd.source = gameObject.AddComponent<AudioSource>();
-            snd.source.clip = snd.clip;
+            string name = audioListObjects[i].name;
+            if (dic_Audio.ContainsKey(name))
+                name = name + "Secundary";
+            if (dic_Audio.ContainsKey(name))
+                continue;
+            dic_Audio.Add(name, audioListObjects[i].GetComponent<AudioSource>());
+        }
+        //foreach (Sound snd in sounds)
+        //{
+        //    snd.source = gameObject.AddComponent<AudioSource>();
+        //    snd.source.clip = snd.clip;*/
+        //}
+        foreach (KeyValuePair<string, AudioSource> audio in dic_Audio)
+        {
+            dic_Audio[audio.Key].Stop();
         }
     }
 
