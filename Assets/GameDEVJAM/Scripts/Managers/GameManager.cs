@@ -13,10 +13,13 @@ public class GameManager : Manager<GameManager>
         MENU,
         RUNNING,
         PAUSED,
-        GAMEOVER
+        GAMEOVER,
+        COMBAT
     }
 
     public Events.EventGameState OnGameStateChanged;
+
+    public GameObject player;
 
     GameState _currentGameState = GameState.MENU;
     //int numberScenes;
@@ -30,7 +33,6 @@ public class GameManager : Manager<GameManager>
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-
         // currentLevel = SceneManager.GetActiveScene().buildIndex;
         // numberScenes = SceneManager.sceneCountInBuildSettings - 1;
     }
@@ -41,11 +43,22 @@ public class GameManager : Manager<GameManager>
         {
             ResetLevel();
         }
+
+        if (Input.GetButtonDown("Fire1") && _currentGameState == GameState.MENU)
+        {
+            player.GetComponent<Control>().CameraAnim.SetTrigger("intro");
+            UI_Items.Instance.GetComponent<Animator>().SetTrigger("intro");
+            UpdateState(GameState.RUNNING);
+        }
     }
 
     public void StarGame()
     {
         UpdateState(GameState.RUNNING);
+    }
+    public void ButtonMechanciStart()
+    {
+        UpdateState(GameState.COMBAT);
         //StartCoroutine(Spawner.Instance.SpawnArrow());
         StartCoroutine(Spawner.Instance.SpawnArrowDuel());
     }
@@ -87,6 +100,10 @@ public class GameManager : Manager<GameManager>
                 break;
 
             case GameState.GAMEOVER:
+                Time.timeScale = 1.0f;
+                break;
+
+            case GameState.COMBAT:
                 Time.timeScale = 1.0f;
                 break;
 

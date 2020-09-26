@@ -1622,6 +1622,7 @@ MonoBehaviour:
   OnGameStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  player: {fileID: 2094386360}
 --- !u!4 &864831811
 Transform:
   m_ObjectHideFlags: 0
@@ -3604,7 +3605,7 @@ PrefabInstance:
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.349999
+      value: -23.13
       objectReference: {fileID: 0}
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
@@ -3614,7 +3615,7 @@ PrefabInstance:
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.9
+      value: -4.66
       objectReference: {fileID: 0}
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
@@ -4395,6 +4396,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2094386360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4539013121219695976, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1875902357}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2135885289
 GameObject:
   m_ObjectHideFlags: 0

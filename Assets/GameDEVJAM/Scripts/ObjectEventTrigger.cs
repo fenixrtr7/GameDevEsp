@@ -19,6 +19,7 @@ public class ObjectEventTrigger : MonoBehaviour
         {
             Debug.Log("Interactuar");
             eventController.OnActionCalled(EEventType.battle);
+            UIManager.Instance.HideTriggerMessage();
             eventController = null;
         }
     }
