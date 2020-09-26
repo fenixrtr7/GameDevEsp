@@ -15,17 +15,17 @@ public enum TypeArrow
 public class ArrowSongDirections : ScriptableObject
 {
     public List<Key> keys;
-    public int damage = 1;
+    [HideInInspector] public int damage = 1;
 
     [System.Serializable]
     public class Key
     {
         public TypeArrow direction;
         public float tempo = 1f;
-        public bool visible = true;
+        [HideInInspector] public bool visible = true;
         public bool isRandom;
         public bool isSpecial;
-        public int damage = 1;
+        [HideInInspector] public int damage = 1;
         [HideInInspector] public GameObject objectPrefab;
 
         public Key(TypeArrow _direction, float _tempo, bool _visible, bool _isRandom, bool _isSpecial, int _damage = 1)
@@ -42,6 +42,11 @@ public class ArrowSongDirections : ScriptableObject
         public GameObject AssignSprite()
         {
             GameObject gObj = null;
+            if (isRandom)
+            {
+                direction = (TypeArrow)Random.Range(1, 5);
+            }
+            
             if (!isSpecial)
             {
                 switch (direction)
@@ -62,7 +67,8 @@ public class ArrowSongDirections : ScriptableObject
                         gObj = Spawner.Instance.arrowObj[3];
                         break;
                 }
-            }else
+            }
+            else
             {
                 switch (direction)
                 {
@@ -83,6 +89,7 @@ public class ArrowSongDirections : ScriptableObject
                         break;
                 }
             }
+
 
             return gObj;
         }

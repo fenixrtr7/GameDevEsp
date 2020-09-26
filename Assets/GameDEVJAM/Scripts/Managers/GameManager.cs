@@ -46,6 +46,10 @@ public class GameManager : Manager<GameManager>
     public void StarGame()
     {
         UpdateState(GameState.RUNNING);
+    }
+    public void ButtonMechanciStart()
+    {
+        UpdateState(GameState.RUNNING);
         //StartCoroutine(Spawner.Instance.SpawnArrow());
         StartCoroutine(Spawner.Instance.SpawnArrowDuel());
     }
