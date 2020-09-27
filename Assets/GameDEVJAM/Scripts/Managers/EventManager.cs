@@ -35,24 +35,31 @@ public class EventManager : Manager<EventManager>
                 || inter.trigger == EventController.Interaction.EEventTrigger.onInteracted && prevEvent == EEventType.none && nextEvent == EEventType.none
                 || inter.trigger == EventController.Interaction.EEventTrigger.onObjEnabled && prevEvent == EEventType.none
                 || inter.trigger == EventController.Interaction.EEventTrigger.onObjDisabled && nextEvent == EEventType.none)
-                ActivateActions(inter, obj, nextEvent);
+                ActivateActions(inter, obj);
         }
     }
 
-    private void ActivateActions(EventController.Interaction inter, KeyValuePair<string, DynamicObject> obj, EEventType nextEvent)
+    private void ActivateActions(EventController.Interaction inter, KeyValuePair<string, DynamicObject> obj)
     {
         if (inter.action == EventController.Interaction.EEventAction.changeEvent)
-            obj.Value.controller.OnActionCalled(nextEvent);
+            obj.Value.controller.OnActionCalled(inter.eventToChange);
         else if (inter.action == EventController.Interaction.EEventAction.unlockNextDialog)
             dic_dynamicObjects[obj.Key].controller.dialogSequence.phase++;
         else if (inter.action == EventController.Interaction.EEventAction.unlockDuel)
             dic_dynamicObjects[obj.Key].controller.duelActive = true;
-        else if (inter.action == EventController.Interaction.EEventAction.disableSelfOffCameras || inter.action == EventController.Interaction.EEventAction.enableSelfOffCameras)
+        else if (inter.action == EventController.Interaction.EEventAction.disableSelfOffCameras)
             dic_dynamicObjects[obj.Key].controller.enableOrDisableSelf = true;
+        else if (inter.action == EventController.Interaction.EEventAction.enableSelfOffCameras)
+            EnableNPC(obj.Value);
         else if (inter.action == EventController.Interaction.EEventAction.followPlayer)
             dic_dynamicObjects[obj.Key].controller.followPlayer = true;
         else if (inter.action == EventController.Interaction.EEventAction.moveTowardsPoint)
             dic_dynamicObjects[obj.Key].controller.FollowPoint();
+    }
+
+    private void EnableNPC(DynamicObject obj)
+    {
+        obj.objectRelated.SetActive(true);
     }
 
     public string AddDynamicObject(string name, GameObject obj, EventController controller)

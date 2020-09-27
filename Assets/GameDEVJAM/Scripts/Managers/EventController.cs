@@ -13,7 +13,9 @@ public class EventController : MonoBehaviour
     private string _dynamicID;
     [HideInInspector]
     public bool duelActive;
+    [HideInInspector]
     public bool enableOrDisableSelf;
+    [HideInInspector]
     public bool followPlayer;
 
     void Start()
@@ -42,6 +44,7 @@ public class EventController : MonoBehaviour
     {
         if (eCurrentEvent == eventToChange)
             return;
+        _cancelTimer = true;
         EEventType prevEvent = eCurrentEvent;
         eCurrentEvent = eventToChange;
         EventManager.Instance.UpdateEvent(_dynamicID, prevEvent, eCurrentEvent);
@@ -58,12 +61,15 @@ public class EventController : MonoBehaviour
         switch (eCurrentEvent) ///TO DO: set all of assets and stuff
         {
             case EEventType.idle:
+                
                 break;
             case EEventType.chat:
                 break;
             case EEventType.walking:
                 break;
             case EEventType.battle:
+                if (_timerCoroutine != null)
+                    StopCoroutine(_timerCoroutine);
                 if (GameManager.Instance.CurrentGameState == GameManager.GameState.COMBAT)
                 {
                     Debug.LogError("Combat state is already in use");
@@ -90,9 +96,16 @@ public class EventController : MonoBehaviour
         }
     }
 
+    private bool _cancelTimer;
+    private Coroutine _timerCoroutine;
     private IEnumerator EExecuteTimer(Timer timer)
     {
         yield return new WaitForSeconds(timer.timeInSecs);
+        if (_cancelTimer)
+        {
+            _cancelTimer = false;
+            yield return null;
+        }
         OnActionCalled(timer.activationEvent);
     }
 
