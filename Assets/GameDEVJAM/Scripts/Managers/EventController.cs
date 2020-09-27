@@ -64,10 +64,14 @@ public class EventController : MonoBehaviour
             case EEventType.idle:
                 
                 break;
+                
             case EEventType.chat:
+
                 break;
+
             case EEventType.walking:
                 break;
+
             case EEventType.battle:
                 if (_timerCoroutine != null)
                     StopCoroutine(_timerCoroutine);
