@@ -15,7 +15,7 @@ public class EventController : MonoBehaviour
     public bool duelActive;
     public bool enableOrDisableSelf;
     public bool followPlayer;
-    
+
     void Start()
     {
         _dynamicID = EventManager.Instance.AddDynamicObject(this.name, this.gameObject, this);
@@ -70,8 +70,12 @@ public class EventController : MonoBehaviour
                     return;
                 }
                 GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
-                
-                CombatManager.Instance.StartCombat();
+                if (this.duel == null)
+                {
+                    Debug.LogError("Doesn't exist a duel for this character");
+                    return;
+                }
+                CombatManager.Instance.StartCombat(this.duel);
 
                 break;
             case EEventType.deafeated:
@@ -95,17 +99,17 @@ public class EventController : MonoBehaviour
     [System.Serializable]
     public class Interaction
     {
-        public enum EEventTrigger 
-        { 
+        public enum EEventTrigger
+        {
             onObjEnabled,
             onObjDisabled,
-            onEnemyDefeated, 
-            onDialogPhaseShown, 
+            onEnemyDefeated,
+            onDialogPhaseShown,
             onInteracted,
             onChagedEvent
         };
-        public enum EEventAction 
-        { 
+        public enum EEventAction
+        {
             unlockDuel,
             unlockNextDialog,
             disableSelfOffCameras,
@@ -143,8 +147,8 @@ public class EventController : MonoBehaviour
         public int characterDialogIndex;
         public bool exclamation;
 
-        public Dialog() 
-        { 
+        public Dialog()
+        {
 
         }
     }

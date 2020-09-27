@@ -6,9 +6,10 @@ public class CombatManager : Manager<CombatManager>
 {
     public GameObject combat;
 
-    public void StartCombat()
+    public void StartCombat(ArrowSongDirections duel)
     {
         GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
+        Spawner.Instance.duel = duel;
         StartCoroutine(Spawner.Instance.SpawnArrowDuel());
 
         UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
