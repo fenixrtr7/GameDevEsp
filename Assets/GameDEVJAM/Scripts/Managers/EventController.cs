@@ -5,71 +5,61 @@ using UnityEngine;
 public class EventController : MonoBehaviour
 {
     public EEventType eCurrentEvent;
+    public bool autoProgressDialogPhase;
+    public bool autoWatchDanceDuels;
     public List<Interaction> objInteractions;
     public List<Timer> objTimers;
-    public bool autoProgressDialogPhase;
     public Dialog dialogSequence;
+    public List<Vector3> pointsToWalk;
     public ArrowSongDirections duel;
     private string _dynamicID;
     [HideInInspector]
     public bool duelActive;
-    [HideInInspector]
-    public bool enableOrDisableSelf;
-    [HideInInspector]
-    public bool followPlayer;
 
     void Start()
     {
         _dynamicID = EventManager.Instance.AddDynamicObject(this.name, this.gameObject, this);
+        OnActionCalled(EEventType.idle);
     }
 
     private void Update()
     {
-        if (enableOrDisableSelf)
-        {
-            if (this.enabled)
-                this.enabled = false;
-            else
-                this.enabled = true;
-            enableOrDisableSelf = false;
-        }
 
-        //if (Input.GetKeyDown(KeyCode.R))
-        //{
-
-        //}
     }
 
-    public void OnActionCalled(EEventType eventToChange)
+    public void OnActionCalled(EEventType eventToChange, bool interacted = false)
     {
         if (eCurrentEvent == eventToChange)
             return;
         _cancelTimer = true;
         EEventType prevEvent = eCurrentEvent;
         eCurrentEvent = eventToChange;
-        EventManager.Instance.UpdateEvent(_dynamicID, prevEvent, eCurrentEvent);
-        StateSettings();
-    }
-
-    public void FollowPoint()
-    {
-
+        if (prevEvent != EEventType.none)
+        {
+            EventManager.Instance.UpdateEvent(_dynamicID, prevEvent, eCurrentEvent, interacted);
+            StateSettings();
+        }
     }
 
     private void StateSettings()
     {
+        if (_timerCoroutine != null)
+        {
+            StopCoroutine(_timerCoroutine);
+            _timerCoroutine = null;
+        }
         switch (eCurrentEvent) ///TO DO: set all of assets and stuff
         {
             case EEventType.idle:
-                
+
                 break;
             case EEventType.chat:
                 break;
             case EEventType.walking:
+                if (!_followingPoint)
+                    StartWalk();
                 break;
             case EEventType.battle:
-                if (_timerCoroutine != null)
-                    StopCoroutine(_timerCoroutine);
                 if (GameManager.Instance.CurrentGameState == GameManager.GameState.COMBAT)
                 {
                     Debug.LogError("Combat state is already in use");
@@ -86,13 +76,75 @@ public class EventController : MonoBehaviour
                 break;
             case EEventType.deafeated:
                 break;
+            case EEventType.watching:
+                MoveToWathPoint();
+                break;
             case EEventType.none:
                 break;
         }
-        foreach (Timer timer in objTimers)
+        if (objTimers != null)
         {
-            if (timer.activationEvent == eCurrentEvent)
-                StartCoroutine(EExecuteTimer(timer));
+            Timer timerSelected = null;
+            foreach (Timer timer in objTimers)
+            {
+                if (timer.activationEvent == eCurrentEvent)
+                {
+                    if (timerSelected == null)
+                        timerSelected = timer;
+                    else
+                        Debug.LogError("Can't have more than 1 timers for a state");
+                }
+            }
+            if (timerSelected == null)
+                return;
+            if (_timerCoroutine != null)
+                _timerCoroutine = StartCoroutine(EExecuteTimer(timerSelected));
+        }
+    }
+
+    public void MoveToWathPoint()
+    {
+
+    }
+
+    private bool _followingPoint;
+    public void FollowPoint()
+    {
+        _followingPoint = true;
+    }
+
+    public void FollowPlayer()
+    {
+
+    }
+
+    private int _walkIndex = 0;
+    public void StartWalk()
+    {
+        if (pointsToWalk == null)
+        {
+            Debug.LogError("There are no points to move!");
+            return;
+        }
+        for (int i = 0; i < pointsToWalk.Count; i++)
+        {
+            if (_walkCoroutine != null)
+                return;
+            if (i == _walkIndex)
+            {
+                _walkIndex++;
+                _walkCoroutine = StartCoroutine(EWalking(pointsToWalk[i]));
+            }
+        }
+    }
+
+    private Coroutine _walkCoroutine;
+    private IEnumerator EWalking(Vector3 pointToMove)
+    {
+        if (_followingPoint)
+        {
+            _walkCoroutine = null;
+            yield return null;
         }
     }
 
@@ -106,6 +158,7 @@ public class EventController : MonoBehaviour
             _cancelTimer = false;
             yield return null;
         }
+        _timerCoroutine = null;
         OnActionCalled(timer.activationEvent);
     }
 
@@ -162,7 +215,9 @@ public class EventController : MonoBehaviour
 
         public Dialog()
         {
-
+            phase = 0;
+            characterDialogIndex = 0;
+            exclamation = false;
         }
     }
 
