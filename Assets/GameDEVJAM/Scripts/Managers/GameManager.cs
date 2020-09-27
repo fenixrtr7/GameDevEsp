@@ -46,16 +46,17 @@ public class GameManager : Manager<GameManager>
 
         if (Input.GetButtonDown("Fire1") && _currentGameState == GameState.MENU)
         {
-            player.GetComponent<Control>().CameraAnim.SetTrigger("intro");
-            UI_Items.Instance.GetComponent<Animator>().SetTrigger("intro");
-            UpdateState(GameState.RUNNING);
+            StartGame();
         }
     }
 
-    public void StarGame()
+    public void StartGame()
     {
+        player.GetComponent<Control>().CameraAnim.SetTrigger("intro");
+        UI_Items.Instance.GetComponent<Animator>().SetTrigger("intro");
         UpdateState(GameState.RUNNING);
     }
+
     public void ButtonMechanciStart()
     {
         UpdateState(GameState.COMBAT);
