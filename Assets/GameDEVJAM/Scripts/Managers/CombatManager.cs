@@ -26,7 +26,7 @@ public class CombatManager : Manager<CombatManager>
             UI_Items.Instance.generalItems.pnlCombat.SetActive(false);
             combat.SetActive(false);
         });
-        Animator mainCamera = GameManager.Instance.player.GetComponent<Control>().CameraAnim;
+        Animator mainCamera = GameManager.Instance.player.GetComponent<PlayerController>().CameraAnim;
         mainCamera.SetTrigger("battle");
         newSequ.AppendInterval(1);
         newSequ.AppendCallback(() =>

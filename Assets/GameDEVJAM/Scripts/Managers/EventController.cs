@@ -105,7 +105,7 @@ public class EventController : MonoBehaviour
                 GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
 
                 Transform player = GameManager.Instance.player.transform;
-                Animator mainCamera = GameManager.Instance.player.GetComponent<Control>().CameraAnim;
+                Animator mainCamera = GameManager.Instance.player.GetComponent<PlayerController>().CameraAnim;
 
                 Sequence newSequ = DOTween.Sequence();
                 newSequ.AppendCallback(() =>

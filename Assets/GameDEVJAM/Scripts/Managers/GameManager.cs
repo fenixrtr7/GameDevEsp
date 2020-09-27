@@ -68,7 +68,7 @@ public class GameManager : Manager<GameManager>
 
     public void StartGame()
     {
-        player.GetComponent<Control>().CameraAnim.SetTrigger("intro");
+        player.GetComponent<PlayerController>().CameraAnim.SetTrigger("intro");
         UI_Items.Instance.GetComponent<Animator>().SetTrigger("intro");
         
         UpdateState(GameState.RUNNING);
