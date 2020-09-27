@@ -14,8 +14,8 @@ public enum TypeArrow
 [CreateAssetMenu]
 public class ArrowSongDirections : ScriptableObject
 {
+    public int damage = 10;
     public List<Key> keys;
-    [HideInInspector] public int damage = 10;
 
     [System.Serializable]
     public class Key
@@ -89,8 +89,6 @@ public class ArrowSongDirections : ScriptableObject
                         break;
                 }
             }
-
-
             return gObj;
         }
     }

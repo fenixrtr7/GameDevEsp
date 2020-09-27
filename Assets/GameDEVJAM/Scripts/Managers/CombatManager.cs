@@ -10,10 +10,8 @@ public class CombatManager : Manager<CombatManager>
     {
         GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
         Spawner.Instance.duel = duel;
-        StartCoroutine(Spawner.Instance.SpawnArrowDuel());
 
-        UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
-        combat.SetActive(true);
+        StartCoroutine(WaitTimeToStartDuel());
     }
 
     public void EndCombat()
@@ -22,5 +20,16 @@ public class CombatManager : Manager<CombatManager>
         combat.SetActive(false);
 
         GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
+    }
+    IEnumerator WaitTimeToStartDuel()
+    {
+        UI_Items.Instance.battleItems.textCounter.enabled = true;
+
+        yield return new WaitForSeconds(3);
+        UI_Items.Instance.battleItems.textCounter.enabled = false;
+        StartCoroutine(Spawner.Instance.SpawnArrowDuel());
+
+        UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
+        combat.SetActive(true);
     }
 }

@@ -19,6 +19,7 @@ public abstract class Life : MonoBehaviour
     
     public void QuitLife(int damage)
     {
+        Debug.Log("Damage " + damage);
         life -= damage;
         progressBar.BarValue = life;
     }

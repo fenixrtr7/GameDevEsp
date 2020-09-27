@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace UI
 {
@@ -41,9 +42,10 @@ namespace UI
     }
 
     [System.Serializable]
-    public class Battle
+    public class Duel
     {
         public Image imgTest;
+        public TextMeshProUGUI textCounter;
     }
 
 }
@@ -57,6 +59,6 @@ public class UI_Items : Manager<UI_Items>
     public UI.PauseMenu profileItems = new UI.PauseMenu();
     public UI.FreeExploration freeExplorationItems = new UI.FreeExploration();
     public UI.Dialogue dialogueItems = new UI.Dialogue();
-    public UI.Battle battleItems = new UI.Battle();
+    public UI.Duel battleItems = new UI.Duel();
 
 }
