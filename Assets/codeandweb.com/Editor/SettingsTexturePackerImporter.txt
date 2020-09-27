@@ -3,10 +3,13 @@ importPivots: 1
 tpsheetFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_banio.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.tpsheet
 textureFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_banio.png
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.png
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.png
 normalmapFileNames:
+- 
 - 
 - 
 enableDebugOutput: 0

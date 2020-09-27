@@ -1,0 +1,20 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:ddfee7693ef15fdd2e0da62fd21a3111:3eb3230d314143266f4a17b11354e5ea:7a51f1ef83662a68c74d3d0068da92d0$
+#
+:format=40300
+:texture=atlas_intro.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Linea;1024;991;960;33; 0.5;0.5; 0;0;0;0
+LOGO_DUEL_DISCO_ARO_AZUL;0;1024;1024;1024; 0.5;0.5; 0;0;0;0
+LOGO_DUEL_DISCO_BRILLO_AZUL;0;0;1024;1024; 0.5;0.5; 0;0;0;0
+LOGO_DUEL_DISCO_LETRAS;1024;1024;1024;1024; 0.5;0.5; 0;0;0;0
+Rectangulo;1024;879;428;112; 0.5;0.5; 0;0;0;0
