@@ -16,7 +16,6 @@ Donde XXXX equivale al nombre del audio para reproducir o eliminar
 */
 public class AudioManager : Manager<AudioManager>
 {
-    //public Sound[] sounds;
     public Sound[] sounds;
     public static AudioManager instance;
     public Dictionary<string, AudioSource> dic_Audio;

@@ -7,7 +7,7 @@ public class DialogController : MonoBehaviour
 
     void OnDialogEnd()
     {
-      Yarn.Unity.DialogueRunner.
+      //Yarn.Unity.DialogueRunner.
 
     }
 }

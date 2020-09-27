@@ -14,7 +14,8 @@ public class GameManager : Manager<GameManager>
         RUNNING,
         PAUSED,
         GAMEOVER,
-        COMBAT
+        COMBAT,
+        DIALOG
     }
 
     public Events.EventGameState OnGameStateChanged;
@@ -103,6 +104,10 @@ public class GameManager : Manager<GameManager>
                 break;
 
             case GameState.COMBAT:
+                Time.timeScale = 1.0f;
+                break;
+
+            case GameState.DIALOG:
                 Time.timeScale = 1.0f;
                 break;
 
