@@ -8,7 +8,7 @@ public class EventManager : Manager<EventManager>
 {
     public int intsForDynamicIDs;
     public Dictionary<string, DynamicObject> dic_dynamicObjects;
-    private void Awake()
+    private void Start()
     {
         intsForDynamicIDs = -1;
     }
