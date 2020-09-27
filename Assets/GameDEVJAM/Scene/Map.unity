@@ -2344,7 +2344,6 @@ GameObject:
   - component: {fileID: 1196872271}
   - component: {fileID: 1196872270}
   - component: {fileID: 1196872269}
-  - component: {fileID: 1196872272}
   m_Layer: 0
   m_Name: asdasd_1 (28)
   m_TagString: Untagged
@@ -2429,29 +2428,6 @@ Transform:
   m_Father: {fileID: 857636919}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
---- !u!114 &1196872272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196872268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b7577a5483c9b48bef5068e825f509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eCurrentEvent: 0
-  objInteractions: []
-  objTimers: []
-  autoProgressDialogPhase: 0
-  dialogSequence:
-    phase: 0
-    characterDialogIndex: 0
-    exclamation: 0
-  duelActive: 0
-  enableOrDisableSelf: 0
-  followPlayer: 0
 --- !u!1 &1203216790
 GameObject:
   m_ObjectHideFlags: 0
@@ -5257,8 +5233,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!4 &5948737998428426351
 Transform:
