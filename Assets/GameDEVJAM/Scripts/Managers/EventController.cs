@@ -9,6 +9,7 @@ public class EventController : MonoBehaviour
     public List<Timer> objTimers;
     public bool autoProgressDialogPhase;
     public Dialog dialogSequence;
+    public ArrowSongDirections duel;
     private string _dynamicID;
     [HideInInspector]
     public bool duelActive;
