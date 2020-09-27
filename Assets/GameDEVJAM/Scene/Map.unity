@@ -406,6 +406,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &275510046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275510047}
+  - component: {fileID: 275510048}
+  m_Layer: 0
+  m_Name: EventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &275510047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275510046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.745742, y: 2.8681455, z: 2.7335083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &275510048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275510046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0dece321c03a0943bba5fe9276637cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intsForDynamicIDs: 0
 --- !u!1 &276493025
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,7 +2195,7 @@ GameObject:
   - component: {fileID: 1160463178}
   - component: {fileID: 1160463177}
   m_Layer: 0
-  m_Name: Audio Manager
+  m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2201,6 +2245,7 @@ GameObject:
   - component: {fileID: 1196872271}
   - component: {fileID: 1196872270}
   - component: {fileID: 1196872269}
+  - component: {fileID: 1196872272}
   m_Layer: 0
   m_Name: asdasd_1 (28)
   m_TagString: Untagged
@@ -2285,6 +2330,29 @@ Transform:
   m_Father: {fileID: 857636919}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
+--- !u!114 &1196872272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196872268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b7577a5483c9b48bef5068e825f509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eCurrentEvent: 0
+  objInteractions: []
+  objTimers: []
+  autoProgressDialogPhase: 0
+  dialogSequence:
+    phase: 0
+    characterDialogIndex: 0
+    exclamation: 0
+  duelActive: 0
+  enableOrDisableSelf: 0
+  followPlayer: 0
 --- !u!1 &1203216790
 GameObject:
   m_ObjectHideFlags: 0

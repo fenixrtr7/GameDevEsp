@@ -80,7 +80,7 @@ public class GameManager : Manager<GameManager>
     }
 
     // Cambiar estado de juego
-    void UpdateState(GameState state)
+    public void UpdateState(GameState state)
     {
         GameState previousGameState = _currentGameState;
         _currentGameState = state;

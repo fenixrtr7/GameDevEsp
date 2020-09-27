@@ -63,6 +63,12 @@ public class EventController : MonoBehaviour
             case EEventType.walking:
                 break;
             case EEventType.battle:
+                if (GameManager.Instance.CurrentGameState == GameManager.GameState.COMBAT)
+                {
+                    Debug.LogError("Combat state is already in use");
+                    return;
+                }
+                GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
                 break;
             case EEventType.deafeated:
                 break;
