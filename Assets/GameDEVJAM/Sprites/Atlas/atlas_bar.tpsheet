@@ -1,0 +1,25 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:335f07a77883683c2969d2e973aedbe2:5fff4be346a96550a8bbab6f3a1936a3:44b23f4aa21aafc5dd4d5c0752eae3ce$
+#
+:format=40300
+:texture=atlas_bar.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Barra_4;0;1546;1524;502; 0.5;0.5; 0;0;0;0
+Bocina1_1;0;1264;208;282; 0.5;0.5; 0;0;0;0
+Bocina2_2;1283;1078;233;468; 0.5;0.5; 0;0;0;0
+Cuadro;996;999;268;321; 0.5;0.5; 0;0;0;0
+Equis;1524;1856;397;192; 0.5;0.5; 0;0;0;0
+Neon;208;1285;544;261; 0.5;0.5; 0;0;0;0
+Repisas;0;112;996;337; 0.5;0.5; 0;0;0;0
+rocola;0;449;662;810; 0.5;0.5; 0;0;0;0
+Silla;1524;1259;375;597; 0.5;0.5; 0;0;0;0
+Vaso;996;1320;287;226; 0.5;0.5; 0;0;0;0
