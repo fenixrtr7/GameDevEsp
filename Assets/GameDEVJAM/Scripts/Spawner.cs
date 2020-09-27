@@ -42,6 +42,9 @@ public class Spawner : Manager<Spawner>
             timeToSpawn = duel.keys[i].tempo;
         }
 
-        Debug.Log("End spawn");
+        //Debug.Log("End spawn");
+        yield return new WaitForSeconds(5);
+        
+        CombatManager.Instance.EndCombat();
     }
 }

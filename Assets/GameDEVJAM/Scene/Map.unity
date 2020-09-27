@@ -4895,7 +4895,7 @@ PrefabInstance:
         type: 3}
       propertyPath: duel
       value: 
-      objectReference: {fileID: 11400000, guid: ad066c1839aaafa4094092b597d4bd37,
+      objectReference: {fileID: 11400000, guid: f232750d1a916af44aea8690ed8a26b4,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
@@ -4910,6 +4910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913499447875360728, guid: e1aab8b85d35e96469fd5b81840d4fe5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.94
       objectReference: {fileID: 0}
     - target: {fileID: 7913499448161241539, guid: e1aab8b85d35e96469fd5b81840d4fe5,
         type: 3}

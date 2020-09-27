@@ -20,5 +20,7 @@ public class CombatManager : Manager<CombatManager>
     {
         UI_Items.Instance.generalItems.pnlCombat.SetActive(false);
         combat.SetActive(false);
+
+        GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
     }
 }
