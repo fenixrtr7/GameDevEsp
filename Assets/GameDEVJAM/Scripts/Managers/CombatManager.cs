@@ -8,11 +8,13 @@ public class CombatManager : Manager<CombatManager>
 
     public void StartCombat()
     {
-        UI_Items.Instance.
+        UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
+        combat.SetActive(true);
     }
 
     public void EndCombat()
     {
-
+        UI_Items.Instance.generalItems.pnlCombat.SetActive(false);
+        combat.SetActive(false);
     }
 }

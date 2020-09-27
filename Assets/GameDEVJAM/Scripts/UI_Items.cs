@@ -35,12 +35,6 @@ namespace UI
     }
 
     [System.Serializable]
-    public class Dance
-    {
-        public Image imgTest;
-    }
-
-    [System.Serializable]
     public class Dialogue
     {
         public Image imgTest;
@@ -62,7 +56,6 @@ public class UI_Items : Manager<UI_Items>
     public UI.MainMenu mainMenuItems = new UI.MainMenu();
     public UI.PauseMenu profileItems = new UI.PauseMenu();
     public UI.FreeExploration freeExplorationItems = new UI.FreeExploration();
-    public UI.Dance danceItems = new UI.Dance();
     public UI.Dialogue dialogueItems = new UI.Dialogue();
     public UI.Battle battleItems = new UI.Battle();
 
