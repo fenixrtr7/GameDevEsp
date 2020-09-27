@@ -6,8 +6,15 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     private Rigidbody rb;
+    [HideInInspector]
+    public CharacterAnimaController anim;
     public Animator CameraAnim;
     public SpriteRenderer characterSprite;
+
+    private void Awake()
+    {
+        anim = GetComponent<CharacterAnimaController>();
+    }
 
     void Start()
     {
@@ -30,6 +37,11 @@ public class PlayerController : MonoBehaviour
                 characterSprite.flipX = false;
             else if (moveHorizontal < 0)
                 characterSprite.flipX = true;
+
+            if (rb.velocity.magnitude > 0f)
+                anim.Walking(true);
+            else
+                anim.Walking(false);
 
             Vector3 movement = new Vector3(moveHorizontal, 0f, moveVertical);
             rb.velocity = movement * speed;
