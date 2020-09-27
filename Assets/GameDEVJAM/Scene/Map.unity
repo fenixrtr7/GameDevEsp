@@ -311,6 +311,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &85588854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8907100118484515306, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 888190595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04317fce65da54f4997a5c4465b4e93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &158483666 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+    type: 3}
+  m_PrefabInstance: {fileID: 1377187340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &207494363
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intsForDynamicIDs: 0
+  dialogueManager: {fileID: 158483666}
 --- !u!1 &276493025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,6 +1821,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 296
       objectReference: {fileID: 0}
+    - target: {fileID: 8907100118484515308, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8907100118484515310, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
       propertyPath: m_Name
@@ -1804,7 +1834,7 @@ PrefabInstance:
     - target: {fileID: 8907100118484515310, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8907100118484515311, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
@@ -2802,8 +2832,33 @@ PrefabInstance:
     - target: {fileID: 43672888621516944, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: dialogueUI
+      value: 
+      objectReference: {fileID: 85588854}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 275510046}
     - target: {fileID: 43672888621516951, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5272,6 +5327,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ad066c1839aaafa4094092b597d4bd37,
         type: 2}
+    - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: dialogSequence.character
+      value: chica
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1001 &5690015594805672128
