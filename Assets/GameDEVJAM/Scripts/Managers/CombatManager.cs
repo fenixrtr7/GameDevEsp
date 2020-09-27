@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CombatManager : Manager<CombatManager>
 {
@@ -11,7 +12,10 @@ public class CombatManager : Manager<CombatManager>
         GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
         Spawner.Instance.duel = duel;
 
-        StartCoroutine(WaitTimeToStartDuel());
+        StartCoroutine(Spawner.Instance.SpawnArrowDuel());
+
+        UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
+        combat.SetActive(true);
     }
 
     public void EndCombat()
@@ -22,8 +26,23 @@ public class CombatManager : Manager<CombatManager>
         combat.SetActive(false);
 
         GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
+        Sequence newSequ = DOTween.Sequence();
+        newSequ.AppendCallback(() =>
+        {
+            UI_Items.Instance.generalItems.pnlCombat.SetActive(false);
+            combat.SetActive(false);
+        });
+        Animator mainCamera = GameManager.Instance.player.GetComponent<Control>().CameraAnim;
+        mainCamera.SetTrigger("battle");
+        newSequ.AppendInterval(1);
+        newSequ.AppendCallback(() =>
+        {
+            GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
+        });
+        
     }
-    IEnumerator WaitTimeToStartDuel()
+
+    /*IEnumerator WaitTimeToStartDuel()
     {
         UI_Items.Instance.battleItems.textCounter.enabled = true;
 
@@ -33,5 +52,5 @@ public class CombatManager : Manager<CombatManager>
 
         UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
         combat.SetActive(true);
-    }
+    }*/
 }

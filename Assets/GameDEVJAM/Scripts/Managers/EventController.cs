@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class EventController : MonoBehaviour
 {
@@ -81,7 +82,24 @@ public class EventController : MonoBehaviour
                     Debug.LogError("Doesn't exist a duel for this character");
                     return;
                 }
-                CombatManager.Instance.StartCombat(this.duel);
+
+                Transform player = GameManager.Instance.player.transform;
+                Animator mainCamera = GameManager.Instance.player.GetComponent<Control>().CameraAnim;
+
+                Sequence newSequ = DOTween.Sequence();
+                newSequ.AppendCallback(() =>
+                {
+                    UI_Items.Instance.battleItems.textCounter.enabled = true;
+                });
+                newSequ.AppendInterval(3);
+                newSequ.Join(player.DOMove(new Vector3(transform.position.x - 4, 0, transform.position.z), 2));
+                mainCamera.SetTrigger("battle");
+                newSequ.AppendInterval(1);
+                newSequ.AppendCallback(() =>
+                {
+                    UI_Items.Instance.battleItems.textCounter.enabled = false;
+                    CombatManager.Instance.StartCombat(this.duel);
+                });
 
                 break;
             case EEventType.deafeated:
