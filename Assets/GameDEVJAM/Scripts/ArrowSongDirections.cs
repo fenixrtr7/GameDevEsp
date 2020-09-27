@@ -16,6 +16,7 @@ public class ArrowSongDirections : ScriptableObject
 {
     public int damage = 10;
     public List<Key> keys;
+    public AudioClip song;
 
     [System.Serializable]
     public class Key

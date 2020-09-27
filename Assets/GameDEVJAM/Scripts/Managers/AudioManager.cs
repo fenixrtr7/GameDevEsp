@@ -46,10 +46,43 @@ public class AudioManager : Manager<AudioManager>
         //    snd.source = gameObject.AddComponent<AudioSource>();
         //    snd.source.clip = snd.clip;*/
         //}
+        StopAllAudioSource();
+    }
+
+    public void StopAllAudioSource()
+    {
         foreach (KeyValuePair<string, AudioSource> audio in dic_Audio)
         {
             dic_Audio[audio.Key].Stop();
         }
+    }
+
+    public void PlayClipInSource(string audioSource, AudioClip clipToPlay = null, float volume = 1)
+    {
+        bool playAudio = false;
+
+        foreach (KeyValuePair<string, AudioSource> audio in dic_Audio)
+        {
+            if (audioSource.CompareTo(audio.Key) == 0)
+            {
+                playAudio = true;
+            }
+        }
+
+        if (playAudio == false)
+        {
+            Debug.LogError("The audio source key (string) does't exist");
+            return;
+        }
+        StopAllAudioSource();
+        
+        if (clipToPlay != null)
+        {
+            dic_Audio[audioSource].clip = clipToPlay;
+        }
+
+        dic_Audio[audioSource].volume = volume;
+        dic_Audio[audioSource].Play();
     }
 
     public void Play(string name)

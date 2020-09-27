@@ -16,6 +16,8 @@ public class CombatManager : Manager<CombatManager>
 
     public void EndCombat()
     {
+        AudioManager.instance.PlayClipInSource("AmbienceAudioSource");
+
         UI_Items.Instance.generalItems.pnlCombat.SetActive(false);
         combat.SetActive(false);
 

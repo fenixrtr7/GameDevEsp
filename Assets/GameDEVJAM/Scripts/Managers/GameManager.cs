@@ -34,8 +34,8 @@ public class GameManager : Manager<GameManager>
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-        // currentLevel = SceneManager.GetActiveScene().buildIndex;
-        // numberScenes = SceneManager.sceneCountInBuildSettings - 1;
+
+        StartCoroutine(StartGameAudio());
     }
 
     private void Update()
@@ -51,18 +51,20 @@ public class GameManager : Manager<GameManager>
         }
     }
 
+    IEnumerator StartGameAudio()
+    {
+        yield return new WaitForEndOfFrame();
+        AudioManager.Instance.PlayClipInSource("AmbienceAudioSource", null, 0.5f);
+        
+    }
+
     public void StartGame()
     {
         player.GetComponent<Control>().CameraAnim.SetTrigger("intro");
         UI_Items.Instance.GetComponent<Animator>().SetTrigger("intro");
+        
         UpdateState(GameState.RUNNING);
     }
-
-    public void ButtonMechanciStart()
-    {
-        
-    }
-
 
     public void GameOver()
     {
@@ -127,28 +129,6 @@ public class GameManager : Manager<GameManager>
     {
         SceneManager.LoadScene(num);
     }
-
-    // public void NextLevel()
-    // {
-    //     //Debug.Log("number Scenes: " + numberScenes + "current Level: " + currentLevel);
-
-    //     if (numberScenes == currentLevel)
-    //     {
-    //         StartCoroutine(UIManager.Instance.WinPanel());
-    //         // Win
-    //         //Debug.Log("win");
-    //         currentLevel = 0;
-    //         GoMenu();
-    //         ChangeScene(currentLevel);
-    //         // On win and send menu
-    //     }
-    //     else
-    //     {
-    //         currentLevel++;
-    //         ChangeScene(currentLevel);
-    //     }
-
-    // }
 
     public void ResetLevel()
     {

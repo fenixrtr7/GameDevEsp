@@ -3101,7 +3101,7 @@ GameObject:
   - component: {fileID: 1493238938}
   m_Layer: 0
   m_Name: MainAudioSource
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4567,7 +4567,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6b9a407aa6fe05446a2f40357f24f9fc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 00b453f9360d58b4b806955d440ecbf6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5270,7 +5270,7 @@ PrefabInstance:
         type: 3}
       propertyPath: duel
       value: 
-      objectReference: {fileID: 11400000, guid: f232750d1a916af44aea8690ed8a26b4,
+      objectReference: {fileID: 11400000, guid: ad066c1839aaafa4094092b597d4bd37,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}

@@ -34,6 +34,13 @@ public class Spawner : Manager<Spawner>
     {
         for (int i = 0; i < duel.keys.Count; i++)
         {
+            if (i == 0)
+            {
+                if (duel.song == null)
+                    Debug.LogError("The duel hasn't a song assigned");
+                else
+                    StartCoroutine(EPlaySongDelayed(duel.song));
+            }
             yield return new WaitForSeconds(timeToSpawn);
 
             duel.keys[i].objectPrefab = duel.keys[i].AssignSprite();
@@ -46,5 +53,11 @@ public class Spawner : Manager<Spawner>
         yield return new WaitForSeconds(5);
         
         CombatManager.Instance.EndCombat();
+    }
+
+    private IEnumerator EPlaySongDelayed(AudioClip song)
+    {
+        yield return new WaitForSeconds(.5f);
+        AudioManager.Instance.PlayClipInSource("MainAudioSource", song);
     }
 }
