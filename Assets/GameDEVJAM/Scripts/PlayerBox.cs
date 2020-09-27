@@ -136,6 +136,7 @@ public class PlayerBox : MonoBehaviour
         if (other.CompareTag("Arrow"))
         {
             contador++;
+            Debug.Log("Contador " + contador);
 
             if (contador == 1)
             {
