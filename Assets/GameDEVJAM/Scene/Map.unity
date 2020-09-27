@@ -733,6 +733,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380979069}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &407263071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 761804845241728975, guid: 343d38aed3a51074db9fef41517d6bdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3407252142425159076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149d864443ddca94ba93b092e7acd5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &511376834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,6 +2513,18 @@ Transform:
   m_Father: {fileID: 867668690}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
+--- !u!114 &1207533717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 761804843604666072, guid: 343d38aed3a51074db9fef41517d6bdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3407252142425159076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149d864443ddca94ba93b092e7acd5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1347916172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4753,7 +4777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074e0acc1c3781a478fed65a8783fa1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 0}
+  progressBar: {fileID: 407263071}
   life: 100
 --- !u!50 &2532319156145017393
 Rigidbody2D:
@@ -4859,7 +4883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db58f3522153964ba7aa955bc901cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 0}
+  progressBar: {fileID: 1207533717}
   life: 100
 --- !u!4 &2532319157321428760
 Transform:
@@ -4969,6 +4993,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 829830888}
     m_Modifications:
+    - target: {fileID: 794260786443763081, guid: 343d38aed3a51074db9fef41517d6bdb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794260786443763083, guid: 343d38aed3a51074db9fef41517d6bdb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 864831810}
+    - target: {fileID: 794260786443763083, guid: 343d38aed3a51074db9fef41517d6bdb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonMechanciStart
+      objectReference: {fileID: 0}
     - target: {fileID: 3611612701541768893, guid: 343d38aed3a51074db9fef41517d6bdb,
         type: 3}
       propertyPath: m_Name

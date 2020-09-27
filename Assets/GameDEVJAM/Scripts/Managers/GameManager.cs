@@ -59,9 +59,7 @@ public class GameManager : Manager<GameManager>
 
     public void ButtonMechanciStart()
     {
-        UpdateState(GameState.COMBAT);
-        //StartCoroutine(Spawner.Instance.SpawnArrow());
-        StartCoroutine(Spawner.Instance.SpawnArrowDuel());
+        
     }
 
 
