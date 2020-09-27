@@ -1358,6 +1358,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   player: {fileID: 2094386360}
+  dialogue: {fileID: 85588854}
 --- !u!4 &864831811
 Transform:
   m_ObjectHideFlags: 0
@@ -1445,20 +1446,60 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 829830888}
     m_Modifications:
+    - target: {fileID: 8907100118074312238, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8907100118074312400, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8907100118074312400, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 296
+      value: 271
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100118074312401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100118074312401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100118074312401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100118074312401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 85588854}
+    - target: {fileID: 8907100118074312401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: DialogueComplete
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100118074312401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8907100118484515308, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100118484515308, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6862745
       objectReference: {fileID: 0}
     - target: {fileID: 8907100118484515310, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
@@ -1578,7 +1619,12 @@ PrefabInstance:
     - target: {fileID: 8907100119638532401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
       propertyPath: m_Text
-      value: Continue
+      value: Continue...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100119638532401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d, type: 3}
@@ -2341,6 +2387,22 @@ PrefabInstance:
       propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 275510046}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: yarnScripts.Array.data[0]
+      value: 
+      objectReference: {fileID: 2480198943629176163, guid: e8373943f4ca4c94c97b70b0770333ca,
+        type: 3}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: startNode
+      value: Chica.0.0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: startAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 43672888621516951, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4464,6 +4526,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: dialogSequence.character
+      value: Chica
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}

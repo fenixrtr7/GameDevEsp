@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
 using System;
+using Yarn.Unity;
 
 public class GameManager : Manager<GameManager>
 {
@@ -21,6 +22,7 @@ public class GameManager : Manager<GameManager>
     public Events.EventGameState OnGameStateChanged;
 
     public GameObject player;
+    public DialogueUI dialogue;
 
     GameState _currentGameState = GameState.MENU;
     //int numberScenes;
@@ -48,6 +50,12 @@ public class GameManager : Manager<GameManager>
         if (Input.GetButtonDown("Jump") && _currentGameState == GameState.MENU)
         {
             StartGame();
+        }
+
+        if (Input.GetButtonDown("Jump") && _currentGameState == GameState.DIALOG)
+        {
+            dialogue.MarkLineComplete();
+            //EventManager.Instance.EndDialogCharacter();
         }
     }
 
