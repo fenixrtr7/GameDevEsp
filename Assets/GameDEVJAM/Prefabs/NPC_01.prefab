@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rangeTimer: {x: 5, y: 20}
   characterSprite: {fileID: 6634142894232826348}
-  randomMovement: 1
+  randomMovement: 0
   isMoving: 0
   navMeshCoordinates:
   - axisXRange: {x: -23, y: -1}
