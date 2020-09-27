@@ -1,0 +1,12 @@
+[
+	{
+		"title": "Scene 1",
+		"tags": "",
+		"body": "<< if ChicaDialogue is 0>> >>\n¿Qué tal la estás pasando?\n<< end if>> >>\nNo es 0",
+		"position": {
+			"x": -155,
+			"y": 5
+		},
+		"colorID": 8
+	}
+]
