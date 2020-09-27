@@ -15,7 +15,7 @@ public enum TypeArrow
 public class ArrowSongDirections : ScriptableObject
 {
     public List<Key> keys;
-    [HideInInspector] public int damage = 1;
+    [HideInInspector] public int damage = 10;
 
     [System.Serializable]
     public class Key
@@ -46,7 +46,7 @@ public class ArrowSongDirections : ScriptableObject
             {
                 direction = (TypeArrow)Random.Range(1, 5);
             }
-            
+
             if (!isSpecial)
             {
                 switch (direction)
