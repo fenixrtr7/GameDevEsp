@@ -37,7 +37,7 @@ public class Spawner : Manager<Spawner>
             yield return new WaitForSeconds(timeToSpawn);
 
             duel.keys[i].objectPrefab = duel.keys[i].AssignSprite();
-            Instantiate(duel.keys[i].objectPrefab);
+            Instantiate(duel.keys[i].objectPrefab, this.transform.position, Quaternion.identity);
 
             timeToSpawn = duel.keys[i].tempo;
         }

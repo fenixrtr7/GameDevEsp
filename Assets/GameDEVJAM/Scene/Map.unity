@@ -4906,6 +4906,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7616342086992325535, guid: e1aab8b85d35e96469fd5b81840d4fe5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7913499448161241539, guid: e1aab8b85d35e96469fd5b81840d4fe5,
         type: 3}
       propertyPath: progressBar
