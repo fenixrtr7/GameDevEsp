@@ -69,6 +69,7 @@ public class EventController : MonoBehaviour
                     return;
                 }
                 GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
+                // TO DO Cosas miAS
                 break;
             case EEventType.deafeated:
                 break;

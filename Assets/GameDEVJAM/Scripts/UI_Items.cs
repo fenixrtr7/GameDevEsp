@@ -13,6 +13,7 @@ namespace UI
         public GameObject pnlPause;
         public GameObject pnlFreeExploration;
         public GameObject pnlLoading;
+        public GameObject pnlCombat;
     }
 
     // MainMenu Vars
