@@ -21,7 +21,7 @@ public class UIManager : Manager<UIManager>
 
         if (buttonPlayGame != null)
         {
-            buttonPlayGame.onClick.AddListener(delegate() { GameManager.Instance.StarGame(); });
+            buttonPlayGame.onClick.AddListener(delegate() { GameManager.Instance.StartGame(); });
         }else
         {
             Debug.Log("I don't have button play");
