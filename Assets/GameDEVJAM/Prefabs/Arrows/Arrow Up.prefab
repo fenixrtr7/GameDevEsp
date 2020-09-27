@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6355536586342674171}
   - component: {fileID: 6355536586342674172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6355536587740374026}
   - component: {fileID: 6355536587740374027}
   - component: {fileID: 6355536587740374024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arrow Up
   m_TagString: Arrow
   m_Icon: {fileID: 0}
