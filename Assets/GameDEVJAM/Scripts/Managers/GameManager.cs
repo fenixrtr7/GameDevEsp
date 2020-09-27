@@ -44,7 +44,7 @@ public class GameManager : Manager<GameManager>
             ResetLevel();
         }
 
-        if (Input.GetButtonDown("Fire1") && _currentGameState == GameState.MENU)
+        if (Input.GetButtonDown("Jump") && _currentGameState == GameState.MENU)
         {
             StartGame();
         }
