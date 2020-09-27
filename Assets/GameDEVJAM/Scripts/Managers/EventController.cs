@@ -14,7 +14,7 @@ public class EventController : MonoBehaviour
     public List<Vector3> pointsToWalk;
     public ArrowSongDirections duel;
     private string _dynamicID;
-    [HideInInspector]
+    //[HideInInspector]
     public bool duelActive;
 
     void Start()

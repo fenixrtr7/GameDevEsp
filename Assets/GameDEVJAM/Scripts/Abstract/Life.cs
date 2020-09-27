@@ -22,5 +22,22 @@ public abstract class Life : MonoBehaviour
         Debug.Log("Damage " + damage);
         life -= damage;
         progressBar.BarValue = life;
+
+        if (life <= 0)
+        {
+            Dead();
+            ResetLife();
+        }
+    }
+
+    public void Dead()
+    {
+        CombatManager.Instance.EndCombat();
+        Spawner.Instance.OffArrows();
+    }
+
+    public void ResetLife()
+    {
+        life = 100;
     }
 }

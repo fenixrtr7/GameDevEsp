@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ArrowControl : MonoBehaviour
 {
-    [SerializeField] float speed = 6;
+    float speed = 7;
 
     public TypeArrow typeArrow;
 
@@ -16,7 +16,7 @@ public class ArrowControl : MonoBehaviour
 
     private void Start()
     {
-        
+        damage = 20;
     }
 
     void FixedUpdate()

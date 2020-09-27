@@ -60,4 +60,14 @@ public class Spawner : Manager<Spawner>
         yield return new WaitForSeconds(.5f);
         AudioManager.Instance.PlayClipInSource("MainAudioSource", song);
     }
+
+    public void OffArrows()
+    {
+        var arrows = GameObject.FindGameObjectsWithTag("Arrow");
+
+        foreach (var arrow in arrows)
+        {
+            arrow.SetActive(false);
+        }
+    }
 }

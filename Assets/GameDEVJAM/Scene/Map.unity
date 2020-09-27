@@ -2386,12 +2386,12 @@ PrefabInstance:
         type: 3}
       propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 275510046}
+      objectReference: {fileID: 275510048}
     - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
         type: 3}
       propertyPath: yarnScripts.Array.data[0]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: e8373943f4ca4c94c97b70b0770333ca,
+      objectReference: {fileID: 2480198943629176163, guid: a68093ad50b78c6439020cfffae32158,
         type: 3}
     - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
         type: 3}
@@ -2402,6 +2402,16 @@ PrefabInstance:
         type: 3}
       propertyPath: startAutomatically
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDialogCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 43672888621516945, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
+        type: 3}
+      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 43672888621516951, guid: 1731e7680b7ce4a4694a64a8cd0f2702,
         type: 3}
@@ -4532,6 +4542,17 @@ PrefabInstance:
       propertyPath: dialogSequence.character
       value: Chica
       objectReference: {fileID: 0}
+    - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: duelActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: duel
+      value: 
+      objectReference: {fileID: 11400000, guid: 46dac3c96c1eedf43baa38d6d971430c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1001 &5690015594805672128
@@ -4584,8 +4605,14 @@ PrefabInstance:
     - target: {fileID: 7913499447875360728, guid: e1aab8b85d35e96469fd5b81840d4fe5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.94
+      value: 10.94
       objectReference: {fileID: 0}
+    - target: {fileID: 7913499447875360731, guid: e1aab8b85d35e96469fd5b81840d4fe5,
+        type: 3}
+      propertyPath: duel
+      value: 
+      objectReference: {fileID: 11400000, guid: 46dac3c96c1eedf43baa38d6d971430c,
+        type: 2}
     - target: {fileID: 7913499448161241539, guid: e1aab8b85d35e96469fd5b81840d4fe5,
         type: 3}
       propertyPath: progressBar
