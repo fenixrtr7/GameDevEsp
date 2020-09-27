@@ -20,12 +20,6 @@ public class CombatManager : Manager<CombatManager>
 
     public void EndCombat()
     {
-        AudioManager.instance.PlayClipInSource("AmbienceAudioSource");
-
-        UI_Items.Instance.generalItems.pnlCombat.SetActive(false);
-        combat.SetActive(false);
-
-        GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
         Sequence newSequ = DOTween.Sequence();
         newSequ.AppendCallback(() =>
         {
@@ -38,8 +32,8 @@ public class CombatManager : Manager<CombatManager>
         newSequ.AppendCallback(() =>
         {
             GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
+            AudioManager.instance.PlayClipInSource("AmbienceAudioSource");
         });
-        
     }
 
     /*IEnumerator WaitTimeToStartDuel()
