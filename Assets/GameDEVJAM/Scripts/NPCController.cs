@@ -11,7 +11,6 @@ public class NPCController : MonoBehaviour
 
     public Vector2 rangeTimer;
     public Transform characterSprite;
-    public RuntimeAnimatorController animController;
     //public bool isPauseSequence = false;
 
     private bool randomMovement = false;
@@ -35,7 +34,6 @@ public class NPCController : MonoBehaviour
 
     private void Awake()
     {
-        anim.GetComponent<Animator>().runtimeAnimatorController = animController;
         anim = GetComponent<CharacterAnimaController>();
         m_navMeshAgent = GetComponent<NavMeshAgent>();
         trigger = GetComponent<Collider>();
