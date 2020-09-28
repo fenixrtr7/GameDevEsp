@@ -12,7 +12,7 @@ public class CombatManager : Manager<CombatManager>
         GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
         Spawner.Instance.duel = duel;
 
-        StartCoroutine(Spawner.Instance.SpawnArrowDuel());
+        Spawner.Instance.spawnArrorDuelCoroutine = StartCoroutine(Spawner.Instance.SpawnArrowDuel());
 
         UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
         combat.SetActive(true);
@@ -20,19 +20,23 @@ public class CombatManager : Manager<CombatManager>
 
     public void EndCombat()
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<LifePlayer>().ResetLife();
+        GameObject.FindGameObjectWithTag("Enemy").GetComponent<LifeEnemy>().ResetLife();
+        PlayerBox.Instance.damagePlayer = 2.5f;
+
         Sequence newSequ = DOTween.Sequence();
         newSequ.AppendCallback(() =>
         {
             UI_Items.Instance.generalItems.pnlCombat.SetActive(false);
             combat.SetActive(false);
         });
-        Animator mainCamera = GameManager.Instance.player.GetComponent<Control>().CameraAnim;
+        Animator mainCamera = GameManager.Instance.player.GetComponent<PlayerController>().CameraAnim;
         mainCamera.SetTrigger("battle");
         newSequ.AppendInterval(1);
         newSequ.AppendCallback(() =>
         {
             GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
-            AudioManager.instance.PlayClipInSource("AmbienceAudioSource");
+            AudioManager.instance.FadeOutPitch("MainAudioSource", "AmbienceAudioSource");
         });
     }
 

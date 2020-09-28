@@ -14,7 +14,7 @@ public class EventController : MonoBehaviour
     public List<Vector3> pointsToWalk;
     public ArrowSongDirections duel;
     private string _dynamicID;
-    [HideInInspector]
+    //[HideInInspector]
     public bool duelActive;
 
     void Start()
@@ -52,10 +52,35 @@ public class EventController : MonoBehaviour
         switch (eCurrentEvent) ///TO DO: set all of assets and stuff
         {
             case EEventType.idle:
+                if (GameManager.Instance.CurrentGameState == GameManager.GameState.RUNNING)
+                {
+                    return;
+                }
 
+                GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
                 break;
                 
             case EEventType.chat:
+                if (GameManager.Instance.CurrentGameState == GameManager.GameState.DIALOG)
+                {
+                    Debug.LogError("Dialog state is already in use");
+                    return;
+                }
+
+                if (this.dialogSequence == null)
+                {
+                    Debug.LogError("Doesn't exist a dialog for this character");
+                    return;
+                }
+
+                GameManager.Instance.UpdateState(GameManager.GameState.DIALOG);
+
+                if (dialogSequence.dialog >= dialogSequence.numDialogs)
+                {
+                    dialogSequence.dialog = 0;
+                }
+                string dialogKey = dialogSequence.character + "." + dialogSequence.phase.ToString() + "." + dialogSequence.dialog.ToString();
+                EventManager.Instance.dialogueManager.StartDialogue(dialogKey);
 
                 break;
 
@@ -70,15 +95,17 @@ public class EventController : MonoBehaviour
                     Debug.LogError("Combat state is already in use");
                     return;
                 }
-                GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
+                
                 if (this.duel == null)
                 {
                     Debug.LogError("Doesn't exist a duel for this character");
                     return;
                 }
 
+                GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
+
                 Transform player = GameManager.Instance.player.transform;
-                Animator mainCamera = GameManager.Instance.player.GetComponent<Control>().CameraAnim;
+                Animator mainCamera = GameManager.Instance.player.GetComponent<PlayerController>().CameraAnim;
 
                 Sequence newSequ = DOTween.Sequence();
                 newSequ.AppendCallback(() =>
@@ -231,15 +258,19 @@ public class EventController : MonoBehaviour
     [System.Serializable]
     public class Dialog
     {
-        public int phase;
-        public int characterDialogIndex;
+        [HideInInspector] public int phase;
+        public string character;
         public bool exclamation;
+        public int numDialogs;
+        [HideInInspector] public int dialog;
 
         public Dialog()
         {
             phase = 0;
-            characterDialogIndex = 0;
+            character = "";
             exclamation = false;
+            numDialogs = 0;
+            dialog = 0;
         }
     }
 

@@ -3,10 +3,88 @@ importPivots: 1
 tpsheetFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_banio.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_barraVida.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_01_caminarDer.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_01_caminarIzq.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_01_dance.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_02_caminarDer.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_02_caminarIzq.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_02_dance.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_03_caminarDer.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_03_caminarIzq.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/ira_idle.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/ira_paso_01.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/ira_paso_02.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/ira_paso_03.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando_izq.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_idle.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_01.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_02.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_03.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_04.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_idle.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_01.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_02.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_03.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_04.tpsheet
 textureFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_banio.png
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.png
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_barraVida.png
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_01_caminarDer.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_01_caminarIzq.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_01_dance.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_02_caminarDer.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_02_caminarIzq.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_02_dance.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_03_caminarDer.png
+- Assets/GameDEVJAM/Sprites/Atlas/groopie_03_caminarIzq.png
+- Assets/GameDEVJAM/Sprites/Atlas/ira_idle.png
+- Assets/GameDEVJAM/Sprites/Atlas/ira_paso_01.png
+- Assets/GameDEVJAM/Sprites/Atlas/ira_paso_02.png
+- Assets/GameDEVJAM/Sprites/Atlas/ira_paso_03.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando_izq.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_idle.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_01.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_02.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_03.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_04.png
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_idle.png
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_01.png
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_02.png
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_03.png
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_04.png
 normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 enableDebugOutput: 0

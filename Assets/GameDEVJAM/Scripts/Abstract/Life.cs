@@ -5,7 +5,8 @@ using UnityEngine;
 public abstract class Life : MonoBehaviour
 {
     public ProgressBar progressBar;
-    public int life = 100;
+    public float life = 100;
+    bool isDead = false;
 
     private void Start() {
         Init();
@@ -17,10 +18,35 @@ public abstract class Life : MonoBehaviour
         progressBar.limitValue = life;
     }
     
-    public void QuitLife(int damage)
+    public void QuitLife(float damage)
     {
-        Debug.Log("Damage " + damage);
+        if(isDead)
+            return;
+        //Debug.Log("Damage " + damage);
         life -= damage;
         progressBar.BarValue = life;
+
+        if (life <= 0)
+        {
+            Dead();
+        }
+    }
+
+    public virtual void Dead()
+    {
+        isDead = true;
+        // StopCoroutine(Spawner.Instance.spawnArrorDuelCoroutine);
+        // Spawner.Instance.spawnArrorDuelCoroutine = null;
+        
+    }
+
+    public void ResetLife()
+    {
+        life = 100;
+
+        progressBar.BarValue = life;
+        progressBar.limitValue = life;
+
+        isDead = false;
     }
 }

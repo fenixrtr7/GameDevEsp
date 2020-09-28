@@ -6,15 +6,20 @@ using DG.Tweening;
 
 public class NPCController : MonoBehaviour
 {
+    public enum Type { STATIC, WALKER, INTERACTIVE};
+    public Type type = Type.STATIC;
 
     public Vector2 rangeTimer;
     public Transform characterSprite;
-    public bool randomMovement = false;
-    public bool isMoving = false;
+    //public bool isPauseSequence = false;
 
+    private bool randomMovement = false;
+    private bool isMoving = false;
     private NavMeshAgent m_navMeshAgent;
     private Sequence newSequ;
     private Vector3 targetPosition;
+    private Collider trigger;
+    private EventController eventController;
 
     [SerializeField]
     private NavMeshCoordi[] navMeshCoordinates;
@@ -29,13 +34,34 @@ public class NPCController : MonoBehaviour
     private void Awake()
     {
         m_navMeshAgent = GetComponent<NavMeshAgent>();
+        trigger = GetComponent<Collider>();
+        eventController = GetComponent<EventController>();
         newSequ = DOTween.Sequence();
+
+        switch (type)
+        {
+            case Type.INTERACTIVE:
+                trigger.enabled = true;
+                eventController.enabled = true;
+                randomMovement = false;
+                break;
+            case Type.STATIC:
+                trigger.enabled = false;
+                eventController.enabled = false;
+                randomMovement = false;
+                break;
+            case Type.WALKER:
+                trigger.enabled = false;
+                eventController.enabled = false;
+                randomMovement = true;
+                break;
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Init();
+        StartNPCActions();
     }
 
     // Update is called once per frame
@@ -43,8 +69,16 @@ public class NPCController : MonoBehaviour
     {
         characterSprite.rotation = Quaternion.Euler(0, 0, 0);
 
-        if (Vector3.Distance(transform.position, targetPosition) < 0.3)
+        if (Vector3.Distance(transform.position, targetPosition) < 0.3 && isMoving)
+        {
             isMoving = false;
+            ContinueSecuence();
+        }
+
+        /*if (GameManager.Instance.CurrentGameState == GameManager.GameState.RUNNING && isPauseSequence)
+        {
+            ContinueSecuence();
+        }*/
 
         if (isMoving)
         {
@@ -54,11 +88,19 @@ public class NPCController : MonoBehaviour
         {
             //setIdle animation
         }
-    }
 
-    public void Init()
-    {
-        GetNewAction();
+        //debug
+        if (Input.GetKeyDown("k"))
+        {
+            Debug.Log("pause");
+            newSequ.Pause();
+        }
+
+        //debug
+        if (Input.GetKeyDown("l"))
+        {
+            newSequ.Play();
+        }
     }
 
     private Vector3 GetNewRandomPosition()
@@ -76,35 +118,59 @@ public class NPCController : MonoBehaviour
         return pos;
     }
 
-    private void GetNewAction()
+    private void StartNPCActions()
     {
-
         newSequ.AppendCallback(() =>
         {
-            switch (UnityEngine.Random.Range(1, 3))
+            switch (UnityEngine.Random.Range(1, 4))
             {
                 case 1:
-                    if (randomMovement)
+                    //walk
+                    if (type == Type.WALKER && GameManager.Instance.CurrentGameState != GameManager.GameState.COMBAT)
                         MoveCharacterTo(GetNewRandomPosition());
                     break;
                 case 2:
-                    //set other animation
+                    //idle
+
+                    break;
+
+                case 3:
+                    //dance
+
                     break;
             }
         });
         newSequ.AppendInterval(UnityEngine.Random.Range(rangeTimer.x, rangeTimer.y));
-        newSequ.AppendCallback(() =>
-        {
-            //Set idle animation
-        });
         newSequ.SetLoops(-1, LoopType.Restart);
 
     }
 
     public void MoveCharacterTo(Vector3 newPos)
     {
+        PauseSequence();
         targetPosition = newPos;
         isMoving = true;
         m_navMeshAgent.SetDestination(targetPosition);
+
+        if (targetPosition.x > transform.position.x)
+        {
+            characterSprite.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            characterSprite.GetComponent<SpriteRenderer>().flipX = true;
+        }
+    }
+
+    public void PauseSequence()
+    {
+        //isPauseSequence = true;
+        newSequ.Pause();
+    }
+
+    public void ContinueSecuence()
+    {
+        //isPauseSequence = false;
+        newSequ.Play();
     }
 }

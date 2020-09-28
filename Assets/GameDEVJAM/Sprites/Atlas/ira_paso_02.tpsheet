@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:d83dc62aae9126074b0270ed76ca0f3d:0173652026d04ff18d5b5ca353575572:facd594db46710b9cb580763c012c723$
+#
+:format=40300
+:texture=ira_paso_02.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Paso3_00038;1;1535;512;512; 0.5;0; 0;0;0;0
+Paso3_00039;1;1021;512;512; 0.5;0; 0;0;0;0
+Paso3_00040;1;507;512;512; 0.5;0; 0;0;0;0
+Paso3_00041;515;1535;512;512; 0.5;0; 0;0;0;0
+Paso3_00042;1029;1535;512;512; 0.5;0; 0;0;0;0
+Paso3_00043;515;1021;512;512; 0.5;0; 0;0;0;0
+Paso3_00044;515;507;512;512; 0.5;0; 0;0;0;0
+Paso3_00045;1029;1021;512;512; 0.5;0; 0;0;0;0

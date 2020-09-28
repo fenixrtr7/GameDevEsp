@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:5599cf207113414e564ebeb3f2292281:662a752f958eccfe5486edea28176d5c:b07a726fa29c31c10e183b417eeb8447$
+#
+:format=40300
+:texture=negacion_paso_03.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Paso3_00003;1;1535;512;512; 0.5;0; 0;0;0;0
+Paso3_00004;1;1021;512;512; 0.5;0; 0;0;0;0
+Paso3_00005;1;507;512;512; 0.5;0; 0;0;0;0
+Paso3_00006;515;1535;512;512; 0.5;0; 0;0;0;0
+Paso3_00007;1029;1535;512;512; 0.5;0; 0;0;0;0
+Paso3_00008;515;1021;512;512; 0.5;0; 0;0;0;0
+Paso3_00009;515;507;512;512; 0.5;0; 0;0;0;0
+Paso3_00010;1029;1021;512;512; 0.5;0; 0;0;0;0

@@ -8,6 +8,7 @@ public class EventManager : Manager<EventManager>
 {
     public int intsForDynamicIDs;
     public Dictionary<string, DynamicObject> dic_dynamicObjects;
+    public Yarn.Unity.DialogueRunner dialogueManager;
     private void Start()
     {
         intsForDynamicIDs = -1;
@@ -80,6 +81,25 @@ public class EventManager : Manager<EventManager>
     {
         intsForDynamicIDs++;
         return intsForDynamicIDs;
+    }
+
+    public void EndDialogCharacter()
+    {
+        foreach (KeyValuePair<string, DynamicObject> item in dic_dynamicObjects)
+        {
+            if(item.Value.controller.eCurrentEvent == EEventType.chat)
+            {
+                if (item.Value.controller.duel != null && item.Value.controller.duelActive)
+                {
+                    item.Value.controller.OnActionCalled(EEventType.battle);
+                }
+                else
+                {
+                    item.Value.controller.OnActionCalled(EEventType.idle);
+                }
+                break;
+            }
+        }
     }
 
     [System.Serializable]

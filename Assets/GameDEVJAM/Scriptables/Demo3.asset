@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c995a14e0f0190a419717b6e5af1b910, type: 3}
   m_Name: Demo3
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   keys:
   - direction: 2
     tempo: 1.412

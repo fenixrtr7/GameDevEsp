@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:e58b81c6c83ff5a4ef83d67281d58568:816f416a7791f769b684f90f45f732c7:8817e9f411fe04323b7d94fb6b93b33b$
+#
+:format=40300
+:texture=groopie_02_caminarIzq.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Caminado-Izq_00002;1;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003;1;1021;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00004;1;507;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00005;515;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00006;1029;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00007;515;1021;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00008;515;507;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00009;1029;1021;512;512; 0.5;0; 0;0;0;0

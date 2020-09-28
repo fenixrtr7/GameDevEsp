@@ -8,8 +8,19 @@ public class LifePlayer : Life
     {
         if (other.CompareTag("Arrow"))
         {
-            QuitLife(other.gameObject.GetComponent<ArrowControl>().damage);
+            Debug.Log("Damage " +  PlayerBox.Instance.damagePlayer);
+            QuitLife(PlayerBox.Instance.damagePlayer);
             other.gameObject.SetActive(false);
         }
+    }
+
+    public override void Dead()
+    {
+        base.Dead();
+
+        Spawner.Instance.StopCoroutineSpawnDuel();
+
+        CombatManager.Instance.EndCombat();
+        Spawner.Instance.OffArrows();
     }
 }

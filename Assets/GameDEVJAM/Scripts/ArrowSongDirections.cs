@@ -37,7 +37,6 @@ public class ArrowSongDirections : ScriptableObject
             this.isRandom = _isRandom;
             this.isSpecial = _isSpecial;
             this.damage = _damage;
-            //this.objectPrefab = AssignSprite();
         }
 
         public GameObject AssignSprite()

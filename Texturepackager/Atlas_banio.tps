@@ -181,7 +181,7 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">Baño/Espejo.png</key>
+            <key type="filename">Props/Baño/Espejo.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -196,7 +196,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Baño/Panel_baño.png</key>
+            <key type="filename">Props/Baño/Panel_baño.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -214,8 +214,8 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>Baño/Espejo.png</filename>
-            <filename>Baño/Panel_baño.png</filename>
+            <filename>Props/Baño/Espejo.png</filename>
+            <filename>Props/Baño/Panel_baño.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
