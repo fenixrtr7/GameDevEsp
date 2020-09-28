@@ -71,7 +71,7 @@ public class NPCController : MonoBehaviour
     {
         characterSprite.rotation = Quaternion.Euler(0, 0, 0);
 
-        if (Vector3.Distance(transform.position, targetPosition) < 0.3 && isMoving)
+        if (Vector3.Distance(transform.position, targetPosition) < 0.5 && isMoving)
         {
             isMoving = false;
             ContinueSecuence();
@@ -178,17 +178,22 @@ public class NPCController : MonoBehaviour
 
     public void GoToBattle()
     {
-        Vector3 playerPos = GameManager.Instance.player.transform.position;
-        Vector2 centerPos = new Vector2(playerPos.x - 2, playerPos.z + 2 );
+        if (type == Type.WALKER)
+        {
+            Debug.Log("asdasdad");
 
-        Vector2 newAxisX = new Vector2(centerPos.x - 3, centerPos.x + 3);
-        Vector2 newAxisY = new Vector2(centerPos.x - 0.5f, centerPos.x + 0.5f);
+            Vector3 playerPos = GameManager.Instance.player.transform.position;
+            Vector3 centerPos = new Vector3(playerPos.x - 2, 0, playerPos.z + 2);
 
-        float x = UnityEngine.Random.Range(newAxisX.x, newAxisX.y);
-        float y = UnityEngine.Random.Range(newAxisY.x, newAxisY.y);
+            Vector2 newAxisX = new Vector2(centerPos.x - 3, centerPos.x - 0.5f);
+            Vector2 newAxisY = new Vector2(centerPos.x + 3, centerPos.x + 0.5f);
 
-        Vector3 pos = new Vector3(x, 0, y);
+            float x = UnityEngine.Random.Range(newAxisX.x, newAxisX.y);
+            float y = UnityEngine.Random.Range(newAxisY.x, newAxisY.y);
 
-        MoveCharacterTo(pos);
+            Vector3 pos = new Vector3(x, 0, y);
+
+            MoveCharacterTo(centerPos);
+        }
     }
 }
