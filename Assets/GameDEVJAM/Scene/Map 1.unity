@@ -4564,7 +4564,7 @@ PrefabInstance:
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: dialogSequence.character
-      value: Charlie
+      value: Bartender
       objectReference: {fileID: 0}
     - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
