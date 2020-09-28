@@ -20,6 +20,8 @@ public class AudioManager : Manager<AudioManager>
     public static AudioManager instance;
     public Dictionary<string, AudioSource> dic_Audio;
     GameObject[] audioListObjects;
+    public AudioClip audioWrong;
+    public AudioClip audioRight;
 
     void Start()
     {

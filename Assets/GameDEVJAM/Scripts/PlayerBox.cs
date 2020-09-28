@@ -106,6 +106,8 @@ public class PlayerBox : Manager<PlayerBox>
     {
         lifePlayer.QuitLife(damagePlayer);
         currentArrow.gameObject.SetActive(false);
+        AudioManager.Instance.dic_Audio["MainAudioSource"].PlayOneShot(AudioManager.instance.audioWrong);
+
     }
     List<Coroutine> listCorou = new List<Coroutine>();
     bool isPressed = false;
@@ -126,6 +128,7 @@ public class PlayerBox : Manager<PlayerBox>
     {
         if (isInBox)
         {
+            AudioManager.Instance.dic_Audio["MainAudioSource"].PlayOneShot(AudioManager.instance.audioRight);
             if (d == 0)
             {
                 GameManager.Instance.player.GetComponent<CharacterAnimaController>().Dance_01();
