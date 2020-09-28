@@ -1166,6 +1166,35 @@ PrefabInstance:
       propertyPath: battleItems.textCounter
       value: 
       objectReference: {fileID: 1425396625}
+    - target: {fileID: 3556988810853042333, guid: 9063bf0acd2dff7419df6863b9414b76,
+        type: 3}
+      propertyPath: battleItems.spriteWin
+      value: 
+      objectReference: {fileID: 21300000, guid: e2547ee8c0297084584264f85fbb72cc,
+        type: 3}
+    - target: {fileID: 3556988810853042333, guid: 9063bf0acd2dff7419df6863b9414b76,
+        type: 3}
+      propertyPath: battleItems.spriteOverkill
+      value: 
+      objectReference: {fileID: 21300000, guid: 0942a1f845aa13c47ae1cf3e4a090b51,
+        type: 3}
+    - target: {fileID: 3556988810853042333, guid: 9063bf0acd2dff7419df6863b9414b76,
+        type: 3}
+      propertyPath: battleItems.spriteLose
+      value: 
+      objectReference: {fileID: 21300000, guid: 55c3328d3d02d454d8fc87d4a2c2b3ac,
+        type: 3}
+    - target: {fileID: 3556988810853042333, guid: 9063bf0acd2dff7419df6863b9414b76,
+        type: 3}
+      propertyPath: battleItems.imageSpawn
+      value: 
+      objectReference: {fileID: 1445851288}
+    - target: {fileID: 3556988810853042333, guid: 9063bf0acd2dff7419df6863b9414b76,
+        type: 3}
+      propertyPath: battleItems.spriteDuel
+      value: 
+      objectReference: {fileID: 21300000, guid: f5936d25698b2e34881cbf53906c292b,
+        type: 3}
     - target: {fileID: 5377325037778857905, guid: 9063bf0acd2dff7419df6863b9414b76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1615,6 +1644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907100118577287469, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8907100119638532401, guid: 5f9aa04a7dbac5a43a7dcb00177a5c4d,
         type: 3}
@@ -2698,6 +2732,80 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1445851286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445851287}
+  - component: {fileID: 1445851289}
+  - component: {fileID: 1445851288}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1445851287
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445851286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 829830888}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0.0000038146973}
+  m_SizeDelta: {x: 360.7782, y: 106.03955}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1445851288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445851286}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0942a1f845aa13c47ae1cf3e4a090b51, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1445851289
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445851286}
+  m_CullTransparentMesh: 0
 --- !u!1 &1493238937
 GameObject:
   m_ObjectHideFlags: 0

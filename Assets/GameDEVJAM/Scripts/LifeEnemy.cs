@@ -8,10 +8,7 @@ public class LifeEnemy : Life
     {
         base.Dead();
 
-        // TO DO Sacar over kill
-        UI_Items.Instance.battleItems.textCounter.text = "Over Kill!!";
-        UI_Items.Instance.battleItems.textCounter.enabled = true;
-
+        UI_Items.Instance.battleItems.ChangeImageAndActive(UI_Items.Instance.battleItems.spriteOverkill);
         StartCoroutine(QuitText());
 
         PlayerBox.Instance.damagePlayer = 0;
@@ -21,7 +18,6 @@ public class LifeEnemy : Life
     {
         yield return new WaitForSeconds(1.5f);
 
-        UI_Items.Instance.battleItems.textCounter.enabled = false;
-        UI_Items.Instance.battleItems.textCounter.text = "Duel!!!";
+        UI_Items.Instance.battleItems.imageSpawn.enabled = false;
     }
 }

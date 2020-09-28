@@ -18,8 +18,13 @@ public class CombatManager : Manager<CombatManager>
         combat.SetActive(true);
     }
 
-    public void EndCombat()
+    public void EndCombat(bool lose)
     {
+        if(!lose)
+            UI_Items.Instance.battleItems.ChangeImageAndActive(UI_Items.Instance.battleItems.spriteWin);
+        
+        StartCoroutine(QuitText());
+
         GameObject.FindGameObjectWithTag("Player").GetComponent<LifePlayer>().ResetLife();
         GameObject.FindGameObjectWithTag("Enemy").GetComponent<LifeEnemy>().ResetLife();
         PlayerBox.Instance.damagePlayer = 2.5f;
@@ -38,6 +43,13 @@ public class CombatManager : Manager<CombatManager>
             GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
             AudioManager.instance.PlayClipInSource("AmbienceAudioSource");
         });
+    }
+
+    IEnumerator QuitText()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        UI_Items.Instance.battleItems.imageSpawn.enabled = false;
     }
 
     /*IEnumerator WaitTimeToStartDuel()

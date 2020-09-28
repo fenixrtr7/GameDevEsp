@@ -56,7 +56,7 @@ public class Spawner : Manager<Spawner>
         //Debug.Log("End spawn");
         yield return new WaitForSeconds(2.1f);
         
-        CombatManager.Instance.EndCombat();
+        CombatManager.Instance.EndCombat(false);
     }
 
     private IEnumerator EPlaySongDelayed(AudioClip song)
