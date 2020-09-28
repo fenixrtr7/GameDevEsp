@@ -44,8 +44,18 @@ namespace UI
     [System.Serializable]
     public class Duel
     {
-        public Image imgTest;
+        public Sprite spriteWin;
+        public Sprite spriteLose;
+        public Sprite spriteOverkill;
+        public Sprite spriteDuel;
+        public Image imageSpawn;
         public TextMeshProUGUI textCounter;
+
+        public void ChangeImageAndActive(Sprite spr)
+        {
+            imageSpawn.sprite = spr;
+            imageSpawn.enabled = true;
+        }
     }
 
 }

@@ -16,11 +16,21 @@ public class LifePlayer : Life
 
     public override void Dead()
     {
+        UI_Items.Instance.battleItems.ChangeImageAndActive(UI_Items.Instance.battleItems.spriteLose);
+        StartCoroutine(QuitText());
+
         base.Dead();
 
         Spawner.Instance.StopCoroutineSpawnDuel();
 
-        CombatManager.Instance.EndCombat();
+        CombatManager.Instance.EndCombat(true);
         Spawner.Instance.OffArrows();
+    }
+
+    IEnumerator QuitText()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        UI_Items.Instance.battleItems.imageSpawn.enabled = false;
     }
 }
