@@ -10,13 +10,13 @@ public class ArrowControl : MonoBehaviour
 
     public TypeArrow typeArrow;
 
-    public int damage = 5;
+    public float damage = 2.5f;
     
     public bool isEspecial = false;
 
     private void Start()
     {
-        damage = 20;
+        damage = 2.5f;
     }
 
     void FixedUpdate()

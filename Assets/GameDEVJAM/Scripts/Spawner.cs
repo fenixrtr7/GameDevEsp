@@ -54,7 +54,7 @@ public class Spawner : Manager<Spawner>
         }
 
         //Debug.Log("End spawn");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2.1f);
         
         CombatManager.Instance.EndCombat();
     }

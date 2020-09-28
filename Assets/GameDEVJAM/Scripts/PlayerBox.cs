@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBox : MonoBehaviour
+public class PlayerBox : Manager<PlayerBox>
 {
     bool isInBox = false;
     //int contador = 0;
@@ -11,6 +11,8 @@ public class PlayerBox : MonoBehaviour
     TypeArrow typeArrow = TypeArrow.NONE;
     ArrowSongDirections arrowSongDirections;
     ArrowControl currentArrow;
+    public float damageEnemy = 10f;
+    public float damagePlayer = 2.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,78 +47,71 @@ public class PlayerBox : MonoBehaviour
 
             else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && (typeArrow == TypeArrow.UP) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
 
             }
             else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && (typeArrow == TypeArrow.DOWN) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && (typeArrow == TypeArrow.RIGHT) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && (typeArrow == TypeArrow.UP) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && (typeArrow == TypeArrow.DOWN) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && (typeArrow == TypeArrow.LEFT) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) && (typeArrow == TypeArrow.UP) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) && (typeArrow == TypeArrow.RIGHT) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) && (typeArrow == TypeArrow.LEFT) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && (typeArrow == TypeArrow.LEFT) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && (typeArrow == TypeArrow.RIGHT) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
             else if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && (typeArrow == TypeArrow.DOWN) && isInBox)
             {
-                lifePlayer.QuitLife(arrowSongDirections.damage);
-                currentArrow.gameObject.SetActive(false);
+                QuitLifePlayer();
             }
         }
     }
 
+    public void QuitLifePlayer()
+    {
+        lifePlayer.QuitLife(damagePlayer);
+        currentArrow.gameObject.SetActive(false);
+    }
+
     void ConditionKey()
     {
-        //Debug.Log("Cool");
         if (isInBox)
         {
             //Debug.Log("Punto");
 
             if (currentArrow.isEspecial)
             {
-                lifeEnemy.QuitLife(arrowSongDirections.damage);
+                lifeEnemy.QuitLife(damageEnemy);
             }
             currentArrow.gameObject.SetActive(false);
         }
@@ -147,7 +142,7 @@ public class PlayerBox : MonoBehaviour
     // {
     //     if (other.CompareTag("Arrow"))
     //     {
-            
+
     //     }
     // }
 }

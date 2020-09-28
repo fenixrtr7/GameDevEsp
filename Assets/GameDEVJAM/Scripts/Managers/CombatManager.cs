@@ -22,6 +22,7 @@ public class CombatManager : Manager<CombatManager>
     {
         GameObject.FindGameObjectWithTag("Player").GetComponent<LifePlayer>().ResetLife();
         GameObject.FindGameObjectWithTag("Enemy").GetComponent<LifeEnemy>().ResetLife();
+        PlayerBox.Instance.damagePlayer = 2.5f;
 
         Sequence newSequ = DOTween.Sequence();
         newSequ.AppendCallback(() =>
