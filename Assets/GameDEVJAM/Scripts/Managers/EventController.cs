@@ -28,10 +28,12 @@ public class EventController : MonoBehaviour
 
     }
 
-    public void OnActionCalled(EEventType eventToChange, bool interacted = false)
+    public void OnActionCalled(EEventType eventToChange, bool interacted = false, bool directFight = false)
     {
         if (eCurrentEvent == eventToChange)
             return;
+        if(directFight)
+            eventToChange = EEventType.battle;
         _cancelTimer = true;
         EEventType prevEvent = eCurrentEvent;
         eCurrentEvent = eventToChange;

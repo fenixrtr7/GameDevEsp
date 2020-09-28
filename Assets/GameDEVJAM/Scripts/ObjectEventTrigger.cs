@@ -5,11 +5,12 @@ using UnityEngine;
 public class ObjectEventTrigger : MonoBehaviour
 {
     private EventController eventController ;
+    bool one;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        one = true;
     }
 
     // Update is called once per frame
@@ -18,7 +19,11 @@ public class ObjectEventTrigger : MonoBehaviour
         if (eventController && Input.GetButtonDown("Jump"))
         {
             //Debug.Log("Interactuar");
+
             eventController.OnActionCalled(EEventType.chat, true);
+
+            one = false;
+
             UIManager.Instance.HideTriggerMessage();
             eventController = null;
         }

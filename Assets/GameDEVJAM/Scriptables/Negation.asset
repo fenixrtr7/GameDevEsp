@@ -1,0 +1,825 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c995a14e0f0190a419717b6e5af1b910, type: 3}
+  m_Name: Negation
+  m_EditorClassIdentifier: 
+  damage: 10
+  keys:
+  - direction: 2
+    tempo: 0.156
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 1.173
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 2.19
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 3.207
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 4.224
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 5.241
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 6.258
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 7.275
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: 3702452b8d39b5f40b1d851ff2d2a71b,
+      type: 3}
+  - direction: 2
+    tempo: 8.292
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 9.303
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 1
+    tempo: 8.292
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 9.3
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: bceafb984e9c688478ee8e9d482cbd5a,
+      type: 3}
+  - direction: 1
+    tempo: 10.3
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 2
+    tempo: 10.8
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 4
+    tempo: 11.3
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 3
+    tempo: 12.3
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 2
+    tempo: 12.8
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: 3702452b8d39b5f40b1d851ff2d2a71b,
+      type: 3}
+  - direction: 2
+    tempo: 13.3
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 3
+    tempo: 14.3
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 3
+    tempo: 15.4
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 1
+    tempo: 16.4
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: bceafb984e9c688478ee8e9d482cbd5a,
+      type: 3}
+  - direction: 4
+    tempo: 17.4
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 4
+    tempo: 17.9
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 2
+    tempo: 18.4
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 18.9
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 19.9
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 4
+    tempo: 20.4
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 4
+    tempo: 21
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 3
+    tempo: 22
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 2
+    tempo: 22.53
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 23.03
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: 3702452b8d39b5f40b1d851ff2d2a71b,
+      type: 3}
+  - direction: 1
+    tempo: 24.05
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 2
+    tempo: 24.53
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 1
+    tempo: 25.07
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 3
+    tempo: 26.08
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 2
+    tempo: 27.1
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 3
+    tempo: 28.12
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 1
+    tempo: 28.63
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 29.14
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: bceafb984e9c688478ee8e9d482cbd5a,
+      type: 3}
+  - direction: 2
+    tempo: 30.66
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 3
+    tempo: 31.68
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 4
+    tempo: 32.7
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 1
+    tempo: 33.71
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 34.73
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 35.75
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 4
+    tempo: 36.76
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: 3efa6bfbf02206f42834a350283f82e5,
+      type: 3}
+  - direction: 1
+    tempo: 37.26
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 3
+    tempo: 38.29
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 1
+    tempo: 38.8
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 2
+    tempo: 39.31
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 4
+    tempo: 39.81
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 1
+    tempo: 40.32
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 3
+    tempo: 40.83
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 4
+    tempo: 41.85
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: 3efa6bfbf02206f42834a350283f82e5,
+      type: 3}
+  - direction: 2
+    tempo: 42.36
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 1
+    tempo: 42.87
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 2
+    tempo: 43.37
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 3
+    tempo: 43.88
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 1
+    tempo: 44.39
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 3
+    tempo: 44.9
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 4
+    tempo: 45.41
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 4
+    tempo: 45.92
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 4
+    tempo: 46.42
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 3
+    tempo: 46.93
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 4
+    tempo: 47.44
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 2
+    tempo: 47.95
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 48.46
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: 3702452b8d39b5f40b1d851ff2d2a71b,
+      type: 3}
+  - direction: 2
+    tempo: 48.9
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 3
+    tempo: 50.49
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 4
+    tempo: 51
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 1
+    tempo: 51.51
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: bceafb984e9c688478ee8e9d482cbd5a,
+      type: 3}
+  - direction: 3
+    tempo: 52.02
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 2
+    tempo: 52.53
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 3
+    tempo: 53.05
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 1
+    tempo: 53.54
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 4
+    tempo: 54.05
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: 3efa6bfbf02206f42834a350283f82e5,
+      type: 3}
+  - direction: 1
+    tempo: 54.56
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 3
+    tempo: 55.07
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 1
+    tempo: 55.58
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 56.09
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 2
+    tempo: 56.59
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 4
+    tempo: 57.1
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 1
+    tempo: 57.61
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 58.12
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 3
+    tempo: 58.63
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 3e5d31529d435284cb32c68a3b088bd6,
+      type: 3}
+  - direction: 4
+    tempo: 59.14
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: e923960c22606a24f8658d09ce710d83,
+      type: 3}
+  - direction: 1
+    tempo: 59.65
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 60.15
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 60.66
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 3
+    tempo: 61.17
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 4107777445074303577, guid: 86cae2339eb2c0f40baf060152613fca,
+      type: 3}
+  - direction: 1
+    tempo: 61.68
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 4
+    tempo: 62.19
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 2409445597474478232, guid: 3efa6bfbf02206f42834a350283f82e5,
+      type: 3}
+  - direction: 1
+    tempo: 62.7
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 63.21
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 63.71
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 1
+    tempo: 64.22
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: bceafb984e9c688478ee8e9d482cbd5a,
+      type: 3}
+  - direction: 1
+    tempo: 63.73
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6355536587740374039, guid: 93a83a372aa0a8145ac047a792a09ba6,
+      type: 3}
+  - direction: 2
+    tempo: 65.24
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 65.75
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 66.26
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: c6a207d20e168ea4a9b5fb7e2071710b,
+      type: 3}
+  - direction: 2
+    tempo: 66.76
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 6770352053738344932, guid: 3702452b8d39b5f40b1d851ff2d2a71b,
+      type: 3}
+  song: {fileID: 8300000, guid: c25b65e5723634146a2317dfc4a8e947, type: 3}

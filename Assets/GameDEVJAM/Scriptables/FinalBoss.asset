@@ -777,4 +777,4 @@ MonoBehaviour:
     isSpecial: 0
     damage: 0
     objectPrefab: {fileID: 0}
-  song: {fileID: 0}
+  song: {fileID: 8300000, guid: 2bdf160b1aaa3fa4287ba420ce4bdf14, type: 3}

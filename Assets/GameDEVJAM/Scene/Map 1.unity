@@ -1020,13 +1020,14 @@ PrefabInstance:
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: dialogSequence.character
-      value: Caico
+      value: BanoParlante
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: duel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: d84b6782b7dd66941835ee0e42ef5b96,
+        type: 2}
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: autoProgressDialogPhase
@@ -3814,7 +3815,7 @@ PrefabInstance:
         type: 3}
       propertyPath: duel
       value: 
-      objectReference: {fileID: 11400000, guid: 46dac3c96c1eedf43baa38d6d971430c,
+      objectReference: {fileID: 11400000, guid: ae4ad93368d6b1744b43b7c098b43bbb,
         type: 2}
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
@@ -3912,13 +3913,14 @@ PrefabInstance:
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: dialogSequence.character
-      value: Brad
+      value: DJ
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: duel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: ef02220f6f57ca4488b9e5aa30edfc2c,
+        type: 2}
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: autoProgressDialogPhase
@@ -4055,7 +4057,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 829830887}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1283464659
+--- !u!95 &1283464662
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -5965,7 +5967,7 @@ PrefabInstance:
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.35
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
@@ -5975,7 +5977,7 @@ PrefabInstance:
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.3
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4539013121219695983, guid: 9586afa4dfad40f408d682c2aeb9d1fe,
         type: 3}
@@ -6865,7 +6867,7 @@ PrefabInstance:
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: duelActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505387, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
