@@ -181,9 +181,9 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">Intro/LOGO_DUEL_DISCO_ARO_AZUL.png</key>
-            <key type="filename">Intro/LOGO_DUEL_DISCO_BRILLO_AZUL.png</key>
-            <key type="filename">Intro/LOGO_DUEL_DISCO_LETRAS.png</key>
+            <key type="filename">UI/Intro/LOGO_DUEL_DISCO_ARO_AZUL.png</key>
+            <key type="filename">UI/Intro/LOGO_DUEL_DISCO_BRILLO_AZUL.png</key>
+            <key type="filename">UI/Intro/LOGO_DUEL_DISCO_LETRAS.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -198,7 +198,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Intro/Linea.png</key>
+            <key type="filename">UI/Intro/Linea.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -213,7 +213,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Intro/Rectangulo.png</key>
+            <key type="filename">UI/Intro/Rectangulo.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -231,11 +231,11 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>Intro/LOGO_DUEL_DISCO_ARO_AZUL.png</filename>
-            <filename>Intro/LOGO_DUEL_DISCO_BRILLO_AZUL.png</filename>
-            <filename>Intro/LOGO_DUEL_DISCO_LETRAS.png</filename>
-            <filename>Intro/Rectangulo.png</filename>
-            <filename>Intro/Linea.png</filename>
+            <filename>UI/Intro/LOGO_DUEL_DISCO_ARO_AZUL.png</filename>
+            <filename>UI/Intro/LOGO_DUEL_DISCO_BRILLO_AZUL.png</filename>
+            <filename>UI/Intro/LOGO_DUEL_DISCO_LETRAS.png</filename>
+            <filename>UI/Intro/Linea.png</filename>
+            <filename>UI/Intro/Rectangulo.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -181,7 +181,7 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">Bar/Barra_4.png</key>
+            <key type="filename">Props/Bar/Barra_4.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -196,7 +196,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Bocina1_1.png</key>
+            <key type="filename">Props/Bar/Bocina1_1.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -211,7 +211,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Bocina2_2.png</key>
+            <key type="filename">Props/Bar/Bocina2_2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -226,7 +226,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Cuadro.png</key>
+            <key type="filename">Props/Bar/Cuadro.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -241,7 +241,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Equis.png</key>
+            <key type="filename">Props/Bar/Equis.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -256,7 +256,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Neon.png</key>
+            <key type="filename">Props/Bar/Neon.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -271,7 +271,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Repisas.png</key>
+            <key type="filename">Props/Bar/Repisas.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -286,7 +286,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Silla.png</key>
+            <key type="filename">Props/Bar/Silla.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -301,7 +301,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/Vaso.png</key>
+            <key type="filename">Props/Bar/Vaso.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -316,7 +316,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">Bar/rocola.png</key>
+            <key type="filename">Props/Bar/rocola.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -334,16 +334,16 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>Bar/Barra_4.png</filename>
-            <filename>Bar/Bocina1_1.png</filename>
-            <filename>Bar/Bocina2_2.png</filename>
-            <filename>Bar/Cuadro.png</filename>
-            <filename>Bar/Equis.png</filename>
-            <filename>Bar/Neon.png</filename>
-            <filename>Bar/Repisas.png</filename>
-            <filename>Bar/rocola.png</filename>
-            <filename>Bar/Silla.png</filename>
-            <filename>Bar/Vaso.png</filename>
+            <filename>Props/Bar/Barra_4.png</filename>
+            <filename>Props/Bar/Bocina1_1.png</filename>
+            <filename>Props/Bar/Bocina2_2.png</filename>
+            <filename>Props/Bar/Cuadro.png</filename>
+            <filename>Props/Bar/Equis.png</filename>
+            <filename>Props/Bar/Neon.png</filename>
+            <filename>Props/Bar/Repisas.png</filename>
+            <filename>Props/Bar/Silla.png</filename>
+            <filename>Props/Bar/Vaso.png</filename>
+            <filename>Props/Bar/rocola.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

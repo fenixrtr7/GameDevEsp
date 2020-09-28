@@ -3,14 +3,17 @@ importPivots: 1
 tpsheetFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_banio.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_barraVida.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando.tpsheet
 textureFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_banio.png
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.png
+- Assets/GameDEVJAM/Sprites/Atlas/atlas_barraVida.png
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.png
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando.png
 normalmapFileNames:
+- 
 - 
 - 
 - 
