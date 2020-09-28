@@ -54,7 +54,7 @@ public class NPCController : MonoBehaviour
                 break;
             case Type.WALKER:
                 trigger.enabled = false;
-                eventController.enabled = false;
+                eventController.enabled = true;
                 randomMovement = true;
                 break;
         }
@@ -193,7 +193,7 @@ public class NPCController : MonoBehaviour
 
             Vector3 pos = new Vector3(x, 0, y);
 
-            MoveCharacterTo(centerPos);
+            MoveCharacterTo(new Vector3(playerPos.x - Random.Range(-3.0f,3.0f), 0, playerPos.z + 2));
         }
     }
 }
