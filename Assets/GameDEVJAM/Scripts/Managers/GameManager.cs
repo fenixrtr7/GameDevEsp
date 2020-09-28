@@ -62,7 +62,7 @@ public class GameManager : Manager<GameManager>
     IEnumerator StartGameAudio()
     {
         yield return new WaitForEndOfFrame();
-        AudioManager.Instance.PlayClipInSource("AmbienceAudioSource", null, 0.5f);
+        AudioManager.Instance.PlayClipInSource("AmbienceAudioSource", null, 1);
         
     }
 
@@ -70,7 +70,6 @@ public class GameManager : Manager<GameManager>
     {
         player.GetComponent<PlayerController>().CameraAnim.SetTrigger("intro");
         UI_Items.Instance.GetComponent<Animator>().SetTrigger("intro");
-        
         UpdateState(GameState.RUNNING);
     }
 

@@ -110,7 +110,7 @@ public class EventController : MonoBehaviour
                 Sequence newSequ = DOTween.Sequence();
                 newSequ.AppendCallback(() =>
                 {
-                    UI_Items.Instance.battleItems.textCounter.enabled = true;
+                    UI_Items.Instance.battleItems.ChangeImageAndActive(UI_Items.Instance.battleItems.spriteDuel);
                 });
                 newSequ.AppendInterval(3);
                 newSequ.Join(player.DOMove(new Vector3(transform.position.x - 4, 0, transform.position.z), 2));
@@ -118,7 +118,7 @@ public class EventController : MonoBehaviour
                 newSequ.AppendInterval(1);
                 newSequ.AppendCallback(() =>
                 {
-                    UI_Items.Instance.battleItems.textCounter.enabled = false;
+                    UI_Items.Instance.battleItems.imageSpawn.enabled = false;
                     CombatManager.Instance.StartCombat(this.duel);
                 });
 

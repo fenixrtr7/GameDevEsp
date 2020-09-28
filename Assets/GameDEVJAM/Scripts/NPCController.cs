@@ -20,6 +20,7 @@ public class NPCController : MonoBehaviour
     private Vector3 targetPosition;
     private Collider trigger;
     private EventController eventController;
+    private CharacterAnimaController anim;
 
     [SerializeField]
     private NavMeshCoordi[] navMeshCoordinates;
@@ -33,6 +34,7 @@ public class NPCController : MonoBehaviour
 
     private void Awake()
     {
+        anim = GetComponent<CharacterAnimaController>();
         m_navMeshAgent = GetComponent<NavMeshAgent>();
         trigger = GetComponent<Collider>();
         eventController = GetComponent<EventController>();
@@ -82,11 +84,11 @@ public class NPCController : MonoBehaviour
 
         if (isMoving)
         {
-            //set move animation
+            anim.Walking(true);
         }
         else
         {
-            //setIdle animation
+            anim.Walking(false);
         }
 
         //debug
@@ -131,12 +133,12 @@ public class NPCController : MonoBehaviour
                     break;
                 case 2:
                     //idle
-
+                    anim.Idle();
                     break;
 
                 case 3:
                     //dance
-
+                    anim.Dance_01();
                     break;
             }
         });
@@ -154,11 +156,11 @@ public class NPCController : MonoBehaviour
 
         if (targetPosition.x > transform.position.x)
         {
-            characterSprite.GetComponent<SpriteRenderer>().flipX = false;
+            anim.flipX = false;
         }
         else
         {
-            characterSprite.GetComponent<SpriteRenderer>().flipX = true;
+            anim.flipX = true;
         }
     }
 

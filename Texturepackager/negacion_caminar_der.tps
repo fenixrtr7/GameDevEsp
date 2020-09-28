@@ -132,7 +132,7 @@
             <key>datafile</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../Assets/GameDEVJAM/Sprites/Atlas/negacion_idle.tpsheet</filename>
+                <filename>../Assets/GameDEVJAM/Sprites/Atlas/negacion_caminar_der.tpsheet</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -181,9 +181,14 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">Characters/Negacion/Iddle/Iddle_00003.png</key>
-            <key type="filename">Characters/Negacion/Iddle/Iddle_00004.png</key>
-            <key type="filename">Characters/Negacion/Iddle/Iddle_00005.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00003.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00004.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00005.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00006.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00007.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00008.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00009.png</key>
+            <key type="filename">Characters/Negacion/Caminado/Caminado_00010.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,1</point_f>
@@ -201,9 +206,14 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>Characters/Negacion/Iddle/Iddle_00003.png</filename>
-            <filename>Characters/Negacion/Iddle/Iddle_00004.png</filename>
-            <filename>Characters/Negacion/Iddle/Iddle_00005.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00003.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00004.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00005.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00006.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00007.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00008.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00009.png</filename>
+            <filename>Characters/Negacion/Caminado/Caminado_00010.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -56,13 +56,13 @@ public class Spawner : Manager<Spawner>
         //Debug.Log("End spawn");
         yield return new WaitForSeconds(2.1f);
         
-        CombatManager.Instance.EndCombat();
+        CombatManager.Instance.EndCombat(false);
     }
 
     private IEnumerator EPlaySongDelayed(AudioClip song)
     {
         yield return new WaitForSeconds(1.55f);
-        AudioManager.Instance.PlayClipInSource("MainAudioSource", song);
+        AudioManager.Instance.PlayClipInSource("MainAudioSource", song, 1);
     }
 
     public void OffArrows()

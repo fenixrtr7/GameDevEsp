@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1326959391763575525}
+  flipX: 0
 --- !u!1 &4539013121446590616
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +288,7 @@ Animator:
   m_GameObject: {fileID: 4539013121446590616}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f41cc564c841d334990d95b7f3d900b1, type: 2}
+  m_Controller: {fileID: 9100000, guid: d49baddc9ac6810469ec12108b8e6c10, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -387,7 +388,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 4539013122658110496}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
