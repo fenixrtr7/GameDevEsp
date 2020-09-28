@@ -52,7 +52,6 @@ MonoBehaviour:
   type: 2
   rangeTimer: {x: 5, y: 20}
   characterSprite: {fileID: 6634142894232826348}
-  animController: {fileID: 0}
   navMeshCoordinates:
   - axisXRange: {x: -23, y: -1}
     axisYRange: {x: -9, y: 7}
@@ -148,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534f018f44b62b749a722dc1a4a63e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 6931645770514658917}
   flipX: 0
 --- !u!1 &6259821538089670764
 GameObject:
