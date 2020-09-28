@@ -42,5 +42,8 @@ public abstract class Life : MonoBehaviour
     public void ResetLife()
     {
         life = 100;
+
+        progressBar.BarValue = life;
+        progressBar.limitValue = life;
     }
 }

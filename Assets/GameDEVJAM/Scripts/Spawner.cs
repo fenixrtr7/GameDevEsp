@@ -61,7 +61,7 @@ public class Spawner : Manager<Spawner>
 
     private IEnumerator EPlaySongDelayed(AudioClip song)
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1.55f);
         AudioManager.Instance.PlayClipInSource("MainAudioSource", song);
     }
 
