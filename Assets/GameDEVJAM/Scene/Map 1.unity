@@ -262,7 +262,7 @@ PrefabInstance:
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
-      value: Chico (2)
+      value: Chico (2)6
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505380, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
@@ -670,7 +670,7 @@ PrefabInstance:
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
-      value: Chica
+      value: Chica2
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505380, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
@@ -886,7 +886,7 @@ PrefabInstance:
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
-      value: Chico
+      value: Chico4
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505380, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
@@ -2559,7 +2559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1283464659, guid: 9063bf0acd2dff7419df6863b9414b76, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10.236023
+      value: -10.236038
       objectReference: {fileID: 0}
     - target: {fileID: 16956584720538658, guid: 9063bf0acd2dff7419df6863b9414b76,
         type: 3}
@@ -3635,7 +3635,7 @@ PrefabInstance:
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
-      value: Chico (1)
+      value: Chico (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505380, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
@@ -4006,6 +4006,8 @@ MonoBehaviour:
     volume: 0.5
     pitch: 0.5
     loop: 0
+  audioWrong: {fileID: 8300000, guid: 193cf933b00c09d49a8f0416eb3cb53e, type: 3}
+  audioRight: {fileID: 8300000, guid: 24b08115e20f07242a1186c4f53cd4c9, type: 3}
 --- !u!4 &1160463178
 Transform:
   m_ObjectHideFlags: 0
@@ -4291,7 +4293,7 @@ PrefabInstance:
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
-      value: NoBinario
+      value: NoBinario1
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505380, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
@@ -5475,8 +5477,8 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 0
-  MinDistance: 3.71
+  DopplerLevel: 1
+  MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -5489,12 +5491,12 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -2.1886628
-      outSlope: -2.1886628
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.04248366
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0
@@ -5512,7 +5514,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
