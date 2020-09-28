@@ -52,6 +52,7 @@ MonoBehaviour:
   type: 2
   rangeTimer: {x: 5, y: 20}
   characterSprite: {fileID: 6634142894232826348}
+  animController: {fileID: 0}
   navMeshCoordinates:
   - axisXRange: {x: -23, y: -1}
     axisYRange: {x: -9, y: 7}
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534f018f44b62b749a722dc1a4a63e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 6170547450902056733}
+  anim: {fileID: 0}
   flipX: 0
 --- !u!1 &6259821538089670764
 GameObject:
@@ -160,7 +161,7 @@ GameObject:
   - component: {fileID: 6634142894232826348}
   - component: {fileID: 849646402146310667}
   - component: {fileID: 7346644764346710462}
-  - component: {fileID: 6170547450902056733}
+  - component: {fileID: 6931645770514658917}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -245,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8833b013761cab34896d0c50e0240f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &6170547450902056733
+--- !u!95 &6931645770514658917
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -255,7 +256,7 @@ Animator:
   m_GameObject: {fileID: 6259821538089670764}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d49baddc9ac6810469ec12108b8e6c10, type: 2}
+  m_Controller: {fileID: 9100000, guid: b0b864034e1421842a197dece45f3bb9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

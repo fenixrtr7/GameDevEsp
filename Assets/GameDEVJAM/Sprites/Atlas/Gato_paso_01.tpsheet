@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:f7f81431f2daa0526815776afcc79178:0e27e34b442f4db1bb583436fe5a74df:ab3f70b56bfd8ad7dd57d28b46533451$
+#
+:format=40300
+:texture=Gato_paso_01.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Paso1_00073;0;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00074;0;1024;512;512; 0.5;0; 0;0;0;0
+Paso1_00075;0;512;512;512; 0.5;0; 0;0;0;0
+Paso1_00076;0;0;512;512; 0.5;0; 0;0;0;0
+Paso1_00077;512;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00078;0;0;512;512; 0.5;0; 0;0;0;0
+Paso1_00079;1024;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00080;0;1024;512;512; 0.5;0; 0;0;0;0

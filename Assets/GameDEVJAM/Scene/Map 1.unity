@@ -647,6 +647,12 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1725863468130672065, guid: 3ccf4b0630747cc4fa561db0c187ebfe,
+        type: 3}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
@@ -732,6 +738,11 @@ PrefabInstance:
       propertyPath: duelActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 166619d8b829a5c4fb4013c917d3683e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1 &350966549
@@ -839,6 +850,12 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5413453311798904677, guid: c9572f182c281984d9a35b2737ffb78f,
+        type: 3}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
@@ -939,6 +956,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.73
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b0e790894b2279d4ebd07e52efd9749b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1001 &430287742
@@ -952,6 +974,12 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 9178325446253772385, guid: 04026732a5ecaea46be19601d7a82932,
+        type: 3}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
@@ -1048,6 +1076,11 @@ PrefabInstance:
       propertyPath: objInteractions.Array.data[0].trigger
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ef2d037f8da032146b0ea40624c3898c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1001 &430704347
@@ -1061,6 +1094,12 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1725863468130672065, guid: 54b1391fc426fa246905a9959c8ea556,
+        type: 3}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
@@ -1146,6 +1185,11 @@ PrefabInstance:
       propertyPath: duelActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 326cac1ce1517214e9ebceaf0aedee5b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1 &468100606
@@ -3832,6 +3876,11 @@ PrefabInstance:
       propertyPath: dialogSequence.character
       value: Charlie
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d49baddc9ac6810469ec12108b8e6c10, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1001 &1228562662
@@ -3845,6 +3894,12 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8532873768888486143, guid: 9ce9b4fd607ef5d4b9705152d1f85823,
+        type: 3}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
@@ -3941,6 +3996,11 @@ PrefabInstance:
       propertyPath: duelActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c8c16f29c9e4c524ab1716b793775253, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1001 &1262551472
@@ -3954,6 +4014,12 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6821606175240090382, guid: 0e78243da112eb44f9dacbcf3d67a676,
+        type: 3}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
@@ -4049,6 +4115,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7c0fe055462a8b348970983b63175c30, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1 &1283464658 stripped
@@ -4086,6 +4157,11 @@ PrefabInstance:
     - target: {fileID: 1948318096, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
       propertyPath: type
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
@@ -4857,6 +4933,12 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 849646402146310667, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 452346720367219453, guid: 4076e0bf753051141b4157d0f7ff90de,
+        type: 3}
     - target: {fileID: 5511093461384505377, guid: 4b528b3c577c8b4478ec036812874208,
         type: 3}
       propertyPath: m_Name
@@ -4942,6 +5024,11 @@ PrefabInstance:
       propertyPath: duelActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6931645770514658917, guid: 4b528b3c577c8b4478ec036812874208,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9064112c75db2c940b9304186a447706, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b528b3c577c8b4478ec036812874208, type: 3}
 --- !u!1 &1560783239

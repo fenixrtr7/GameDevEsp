@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:6ee16f4ea90ee4d5b8d50dd6e67bd3c0:4930a24d967d360e568839de96928fb0:a0c87270c37992d35e98e31a9022b0e9$
+#
+:format=40300
+:texture=ira_caminarDer.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Caminado_00002;1;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00003;1;1021;512;512; 0.5;0; 0;0;0;0
+Caminado_00004;1;507;512;512; 0.5;0; 0;0;0;0
+Caminado_00005;515;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00006;1029;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00007;515;1021;512;512; 0.5;0; 0;0;0;0
+Caminado_00008;515;507;512;512; 0.5;0; 0;0;0;0
+Caminado_00009;1029;1021;512;512; 0.5;0; 0;0;0;0

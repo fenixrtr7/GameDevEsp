@@ -132,7 +132,7 @@
             <key>datafile</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../Assets/GameDEVJAM/Sprites/Atlas/groopie_02_dance.tpsheet</filename>
+                <filename>../Assets/GameDEVJAM/Sprites/Atlas/Gato_paso_01.tpsheet</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -163,7 +163,7 @@
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
-            <uint>1</uint>
+            <uint>0</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
             <key>trimMargin</key>
@@ -181,14 +181,14 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00015.png</key>
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00016.png</key>
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00017.png</key>
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00018.png</key>
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00019.png</key>
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00020.png</key>
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00021.png</key>
-            <key type="filename">Characters/Groopie-2/Baile/Baile_00022.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00073.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00074.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00075.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00076.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00077.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00078.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00079.png</key>
+            <key type="filename">Characters/Gato/Paso 1/Paso1_00080.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,1</point_f>
@@ -206,14 +206,14 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>Characters/Groopie-2/Baile/Baile_00015.png</filename>
-            <filename>Characters/Groopie-2/Baile/Baile_00016.png</filename>
-            <filename>Characters/Groopie-2/Baile/Baile_00017.png</filename>
-            <filename>Characters/Groopie-2/Baile/Baile_00018.png</filename>
-            <filename>Characters/Groopie-2/Baile/Baile_00019.png</filename>
-            <filename>Characters/Groopie-2/Baile/Baile_00020.png</filename>
-            <filename>Characters/Groopie-2/Baile/Baile_00021.png</filename>
-            <filename>Characters/Groopie-2/Baile/Baile_00022.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00073.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00074.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00075.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00076.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00077.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00078.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00079.png</filename>
+            <filename>Characters/Gato/Paso 1/Paso1_00080.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -1,0 +1,25 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:3b5461c53892e5cdd9eef05bbec25280:08b484bdb20e26143125e8d5360da52c:3fb50a90cd03b46d0c5b5dfb154b360d$
+#
+:format=40300
+:texture=Gato_idle.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Iddle_00055;0;1536;512;512; 0.5;0; 0;0;0;0
+Iddle_00056;0;1024;512;512; 0.5;0; 0;0;0;0
+Iddle_00057;0;512;512;512; 0.5;0; 0;0;0;0
+Iddle_00058;0;0;512;512; 0.5;0; 0;0;0;0
+Iddle_00059;512;1536;512;512; 0.5;0; 0;0;0;0
+Iddle_00060;1024;1536;512;512; 0.5;0; 0;0;0;0
+Iddle_00061;1536;1536;512;512; 0.5;0; 0;0;0;0
+Iddle_00062;512;1024;512;512; 0.5;0; 0;0;0;0
+Iddle_00063;512;512;512;512; 0.5;0; 0;0;0;0
+Iddle_00064;512;0;512;512; 0.5;0; 0;0;0;0

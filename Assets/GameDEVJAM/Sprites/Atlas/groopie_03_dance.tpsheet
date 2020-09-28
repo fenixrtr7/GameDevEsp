@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:69ed4dc3cffecdc43fc8beb1cacb3175:a394b5a93da4442751d796885022b9d4:a10abf76b28b041de18b54e5566e7186$
+#
+:format=40300
+:texture=groopie_03_dance.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Baile_00015;1;1535;512;512; 0.5;0; 0;0;0;0
+Baile_00016;1;1021;512;512; 0.5;0; 0;0;0;0
+Baile_00017;1;507;512;512; 0.5;0; 0;0;0;0
+Baile_00018;515;1535;512;512; 0.5;0; 0;0;0;0
+Baile_00019;1029;1535;512;512; 0.5;0; 0;0;0;0
+Baile_00020;515;1021;512;512; 0.5;0; 0;0;0;0
+Baile_00021;515;507;512;512; 0.5;0; 0;0;0;0
+Baile_00022;1029;1021;512;512; 0.5;0; 0;0;0;0
