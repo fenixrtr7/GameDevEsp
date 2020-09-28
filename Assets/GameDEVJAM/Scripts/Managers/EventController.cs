@@ -23,11 +23,6 @@ public class EventController : MonoBehaviour
         OnActionCalled(EEventType.idle);
     }
 
-    private void Update()
-    {
-
-    }
-
     public void OnActionCalled(EEventType eventToChange, bool interacted = false, bool directFight = false)
     {
         if (eCurrentEvent == eventToChange)
@@ -44,6 +39,7 @@ public class EventController : MonoBehaviour
         }
     }
 
+
     private void StateSettings()
     {
         if (_timerCoroutine != null)
@@ -56,9 +52,11 @@ public class EventController : MonoBehaviour
             case EEventType.idle:
                 if (GameManager.Instance.CurrentGameState == GameManager.GameState.RUNNING)
                 {
+
                     return;
                 }
 
+                this.gameObject.GetComponent<NPCController>().GoRandom();
                 GameManager.Instance.UpdateState(GameManager.GameState.RUNNING);
                 break;
                 
