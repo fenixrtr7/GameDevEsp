@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:8128774c981f7817bb010b9fae448784:3714a278dce1af34a8cbdfdf7f1d1f4a:6abfe4dadcdfd61b52c3c8902a6fba08$
+#
+:format=40300
+:texture=groopie_01_caminarDer.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Caminado_00002;1;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00003;1;1021;512;512; 0.5;0; 0;0;0;0
+Caminado_00004;1;507;512;512; 0.5;0; 0;0;0;0
+Caminado_00005;515;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00006;1029;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00007;515;1021;512;512; 0.5;0; 0;0;0;0
+Caminado_00008;515;507;512;512; 0.5;0; 0;0;0;0
+Caminado_00009;1029;1021;512;512; 0.5;0; 0;0;0;0

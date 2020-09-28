@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -1091461538940473705
     second: RESPLANDOR AZUL BARRA
+  - first:
+      213: 6142972503421427822
+    second: cuadro_100x100_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,8 +138,8 @@ TextureImporter:
       name: CORAZON
       rect:
         serializedVersion: 2
-        x: 408
-        y: 348
+        x: 1
+        y: 246
         width: 92
         height: 72
       alignment: 9
@@ -148,6 +151,27 @@ TextureImporter:
       bones: []
       spriteID: 61f66dab32295d0a0800000000000000
       internalID: -6857414175445586154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuadro_100x100_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 320
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 17, y: 17, z: 17, w: 17}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e602d6be1f8304550800000000000000
+      internalID: 6142972503421427822
       vertices: []
       indices: 
       edges: []
@@ -197,7 +221,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e3535a9854435dd4fa499441ec8decdc
     internalID: 0
     vertices: []
     indices: 

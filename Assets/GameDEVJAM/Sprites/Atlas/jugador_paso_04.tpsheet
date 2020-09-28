@@ -1,0 +1,21 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:f42e2dbd96571e127d0ad3f379587c68:96945a6b6600c44308ac4d1c72b1631e:e093b08f702069d0287f6942b9bb2cc1$
+#
+:format=40300
+:texture=jugador_paso_04.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Paso4_00003;0;1536;512;512; 0.5;0; 0;0;0;0
+Paso4_00004;0;1024;512;512; 0.5;0; 0;0;0;0
+Paso4_00005;0;512;512;512; 0.5;0; 0;0;0;0
+Paso4_00006;0;0;512;512; 0.5;0; 0;0;0;0
+Paso4_00007;512;1536;512;512; 0.5;0; 0;0;0;0
+Paso4_00008;1024;1536;512;512; 0.5;0; 0;0;0;0

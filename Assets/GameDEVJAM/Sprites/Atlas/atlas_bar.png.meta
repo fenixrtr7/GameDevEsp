@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 3864616876983699745
     second: Vaso
+  - first:
+      213: 7462955243412171455
+    second: PUERTA
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -112,8 +115,8 @@ TextureImporter:
         y: 1546
         width: 1524
         height: 502
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,10 +134,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1264
-        width: 208
+        width: 206
         height: 282
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5048544, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,8 +157,8 @@ TextureImporter:
         y: 1078
         width: 233
         height: 468
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,8 +178,8 @@ TextureImporter:
         y: 999
         width: 268
         height: 321
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,8 +199,8 @@ TextureImporter:
         y: 1856
         width: 397
         height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,12 +216,12 @@ TextureImporter:
       name: Neon
       rect:
         serializedVersion: 2
-        x: 208
+        x: 206
         y: 1285
         width: 544
         height: 261
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,15 +234,36 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: PUERTA
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1216
+        width: 202
+        height: 330
+      alignment: 9
+      pivot: {x: 0.5, y: -0.030303031}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbaa832e04eb19760800000000000000
+      internalID: 7462955243412171455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Repisas
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
+        y: 114
         width: 996
         height: 337
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,11 +280,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 449
+        y: 451
         width: 662
-        height: 810
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 808
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,8 +304,8 @@ TextureImporter:
         y: 1259
         width: 375
         height: 597
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,8 +325,8 @@ TextureImporter:
         y: 1320
         width: 287
         height: 226
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

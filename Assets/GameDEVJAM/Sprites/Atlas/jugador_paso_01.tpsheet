@@ -1,0 +1,27 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:de556e1664ff64aca89f047c6365b205:ca1f989e944547c0a060792b432a3447:e5b04a4bc00aee90329f446b18830153$
+#
+:format=40300
+:texture=jugador_paso_01.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Paso1_00003;0;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00004;0;1024;512;512; 0.5;0; 0;0;0;0
+Paso1_00005;0;512;512;512; 0.5;0; 0;0;0;0
+Paso1_00006;0;0;512;512; 0.5;0; 0;0;0;0
+Paso1_00007;0;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00008;512;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00009;1024;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00010;1536;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00011;512;1024;512;512; 0.5;0; 0;0;0;0
+Paso1_00012;512;512;512;512; 0.5;0; 0;0;0;0
+Paso1_00013;1024;1536;512;512; 0.5;0; 0;0;0;0
+Paso1_00014;512;0;512;512; 0.5;0; 0;0;0;0

@@ -132,7 +132,7 @@
             <key>datafile</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename></filename>
+                <filename>../Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.tpsheet</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -184,7 +184,7 @@
             <key type="filename">Props/Bar/Barra_4.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -199,7 +199,7 @@
             <key type="filename">Props/Bar/Bocina1_1.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -214,7 +214,7 @@
             <key type="filename">Props/Bar/Bocina2_2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -229,7 +229,7 @@
             <key type="filename">Props/Bar/Cuadro.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -244,7 +244,7 @@
             <key type="filename">Props/Bar/Equis.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -259,7 +259,7 @@
             <key type="filename">Props/Bar/Neon.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -271,10 +271,25 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">Props/Bar/PUERTA.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,1</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>57,87,114,173</rect>
+                <key>scale9Paddings</key>
+                <rect>57,87,114,173</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">Props/Bar/Repisas.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -289,7 +304,7 @@
             <key type="filename">Props/Bar/Silla.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -304,7 +319,7 @@
             <key type="filename">Props/Bar/Vaso.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -319,7 +334,7 @@
             <key type="filename">Props/Bar/rocola.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0.5,1</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -344,6 +359,7 @@
             <filename>Props/Bar/Silla.png</filename>
             <filename>Props/Bar/Vaso.png</filename>
             <filename>Props/Bar/rocola.png</filename>
+            <filename>Props/Bar/PUERTA.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
