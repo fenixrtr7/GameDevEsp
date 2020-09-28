@@ -24,6 +24,8 @@ tpsheetFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_02.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_03.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_04.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_caminar_der.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_caminar_izq.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_idle.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_01.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_02.tpsheet
@@ -53,12 +55,16 @@ textureFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_02.png
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_03.png
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_paso_04.png
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_caminar_der.png
+- Assets/GameDEVJAM/Sprites/Atlas/negacion_caminar_izq.png
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_idle.png
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_01.png
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_02.png
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_03.png
 - Assets/GameDEVJAM/Sprites/Atlas/negacion_paso_04.png
 normalmapFileNames:
+- 
+- 
 - 
 - 
 - 

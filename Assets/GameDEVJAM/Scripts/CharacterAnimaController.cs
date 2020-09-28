@@ -19,6 +19,13 @@ public class CharacterAnimaController : MonoBehaviour
 
     }
 
+    public void Idle()
+    {
+        anim.SetInteger("dance", 0);
+        anim.SetBool("walkL", false);
+        anim.SetBool("walkR", false);
+    }
+
     public void Walking(bool value)
     {
         if (flipX)
@@ -31,6 +38,26 @@ public class CharacterAnimaController : MonoBehaviour
             anim.SetBool("walkR", value);
             anim.SetBool("walkL", false);
         }
+    }
+
+    public void Dance_01()
+    {
+        anim.SetInteger("dance", 1);
+    }
+
+    public void Dance_02()
+    {
+        anim.SetInteger("dance", 2);
+    }
+
+    public void Dance_03()
+    {
+        anim.SetInteger("dance", 3);
+    }
+
+    public void Dance_04()
+    {
+        anim.SetInteger("dance", 4);
     }
 
 }
