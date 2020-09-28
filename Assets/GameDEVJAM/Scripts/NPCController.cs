@@ -11,6 +11,7 @@ public class NPCController : MonoBehaviour
 
     public Vector2 rangeTimer;
     public Transform characterSprite;
+    public RuntimeAnimatorController animController;
     //public bool isPauseSequence = false;
 
     private bool randomMovement = false;
@@ -34,6 +35,7 @@ public class NPCController : MonoBehaviour
 
     private void Awake()
     {
+        anim.GetComponent<Animator>().runtimeAnimatorController = animController;
         anim = GetComponent<CharacterAnimaController>();
         m_navMeshAgent = GetComponent<NavMeshAgent>();
         trigger = GetComponent<Collider>();
@@ -174,5 +176,21 @@ public class NPCController : MonoBehaviour
     {
         //isPauseSequence = false;
         newSequ.Play();
+    }
+
+    public void GoToBattle()
+    {
+        Vector3 playerPos = GameManager.Instance.player.transform.position;
+        Vector2 centerPos = new Vector2(playerPos.x - 2, playerPos.z + 2 );
+
+        Vector2 newAxisX = new Vector2(centerPos.x - 3, centerPos.x + 3);
+        Vector2 newAxisY = new Vector2(centerPos.x - 0.5f, centerPos.x + 0.5f);
+
+        float x = UnityEngine.Random.Range(newAxisX.x, newAxisX.y);
+        float y = UnityEngine.Random.Range(newAxisY.x, newAxisY.y);
+
+        Vector3 pos = new Vector3(x, 0, y);
+
+        MoveCharacterTo(pos);
     }
 }
