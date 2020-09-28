@@ -5,22 +5,11 @@ using UnityEngine;
 public class Spawner : Manager<Spawner>
 {
     [SerializeField] GameObject[] arrows;
-    [SerializeField]float timeToSpawn = 3;
+    float timeToSpawn = 0;
     public ArrowSongDirections duel;
     public GameObject[] arrowObj;
     public GameObject[] arrowObjS;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Coroutine spawnArrorDuelCoroutine;
 
     public IEnumerator SpawnArrow()
     {
@@ -30,10 +19,19 @@ public class Spawner : Manager<Spawner>
         StartCoroutine(SpawnArrow());
     }
 
+    public void StopCoroutineSpawnDuel()
+    {
+        StopCoroutine(spawnArrorDuelCoroutine);
+        spawnArrorDuelCoroutine = null;
+    }
+    
     public IEnumerator SpawnArrowDuel()
     {
+        int timeStamp = 0;
+
         for (int i = 0; i < duel.keys.Count; i++)
         {
+
             if (i == 0)
             {
                 if (duel.song == null)
@@ -41,12 +39,18 @@ public class Spawner : Manager<Spawner>
                 else
                     StartCoroutine(EPlaySongDelayed(duel.song));
             }
+            if (i > 0)
+            {
+                timeStamp = i - 1;
+            }
+
+            timeToSpawn = duel.keys[i].tempo - duel.keys[timeStamp].tempo;
+            Debug.Log( i + " Time spawn " + timeToSpawn);
+
             yield return new WaitForSeconds(timeToSpawn);
 
             duel.keys[i].objectPrefab = duel.keys[i].AssignSprite();
             Instantiate(duel.keys[i].objectPrefab, this.transform.position, Quaternion.identity);
-
-            timeToSpawn = duel.keys[i].tempo;
         }
 
         //Debug.Log("End spawn");

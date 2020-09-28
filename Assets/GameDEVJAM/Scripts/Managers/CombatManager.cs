@@ -12,7 +12,7 @@ public class CombatManager : Manager<CombatManager>
         GameManager.Instance.UpdateState(GameManager.GameState.COMBAT);
         Spawner.Instance.duel = duel;
 
-        StartCoroutine(Spawner.Instance.SpawnArrowDuel());
+        Spawner.Instance.spawnArrorDuelCoroutine = StartCoroutine(Spawner.Instance.SpawnArrowDuel());
 
         UI_Items.Instance.generalItems.pnlCombat.SetActive(true);
         combat.SetActive(true);
@@ -20,6 +20,9 @@ public class CombatManager : Manager<CombatManager>
 
     public void EndCombat()
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<LifePlayer>().ResetLife();
+        GameObject.FindGameObjectWithTag("Enemy").GetComponent<LifeEnemy>().ResetLife();
+
         Sequence newSequ = DOTween.Sequence();
         newSequ.AppendCallback(() =>
         {

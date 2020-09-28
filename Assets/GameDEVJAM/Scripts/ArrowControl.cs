@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ArrowControl : MonoBehaviour
 {
-    float speed = 7;
+    float speed = 12;
 
     public TypeArrow typeArrow;
 

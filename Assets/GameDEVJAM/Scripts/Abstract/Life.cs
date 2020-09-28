@@ -26,12 +26,15 @@ public abstract class Life : MonoBehaviour
         if (life <= 0)
         {
             Dead();
-            ResetLife();
         }
     }
 
     public void Dead()
     {
+        // StopCoroutine(Spawner.Instance.spawnArrorDuelCoroutine);
+        // Spawner.Instance.spawnArrorDuelCoroutine = null;
+        Spawner.Instance.StopCoroutineSpawnDuel();
+
         CombatManager.Instance.EndCombat();
         Spawner.Instance.OffArrows();
     }
