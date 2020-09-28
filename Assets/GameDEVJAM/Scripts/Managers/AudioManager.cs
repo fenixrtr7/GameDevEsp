@@ -29,7 +29,7 @@ public class AudioManager : Manager<AudioManager>
     public void InitializeManager()
     {
         AvoidDuplicate();
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         audioListObjects = GameObject.FindGameObjectsWithTag("Audio");//new List<AudioSource>();
         dic_Audio = new Dictionary<string, AudioSource>();
         for (int i = 0; i < audioListObjects.Length; i++)

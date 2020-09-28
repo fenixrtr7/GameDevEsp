@@ -72,7 +72,7 @@ public class EventManager : Manager<EventManager>
         int intId = DynamicID();
         if (dic_dynamicObjects == null)
             dic_dynamicObjects = new Dictionary<string, DynamicObject>();
-        dynamicID = name + intId.ToString();
+        dynamicID = name;// + intId.ToString();
         dic_dynamicObjects.Add(dynamicID, new DynamicObject(obj, controller));
         return dynamicID;
     }

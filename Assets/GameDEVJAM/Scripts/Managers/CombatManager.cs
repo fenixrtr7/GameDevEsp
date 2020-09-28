@@ -18,10 +18,31 @@ public class CombatManager : Manager<CombatManager>
         combat.SetActive(true);
     }
 
+    int enemyIndex = 0;
     public void EndCombat(bool lose)
     {
-        if(!lose)
+        if (!lose)
+        {
+            if (enemyIndex == 0)
+            {
+                EventManager.Instance.dic_dynamicObjects["Charlie"].controller.OnActionCalled(EEventType.deafeated);
+                EventManager.Instance.dic_dynamicObjects["Charlie"].objectRelated.GetComponent<Collider>().enabled = false;
+                enemyIndex++;
+            }
+            else if (enemyIndex == 1)
+            {
+                EventManager.Instance.dic_dynamicObjects["Brad"].controller.OnActionCalled(EEventType.deafeated);
+                EventManager.Instance.dic_dynamicObjects["Brad"].objectRelated.GetComponent<Collider>().enabled = false;
+                enemyIndex++;
+            }
+            else if (enemyIndex == 2)
+            {
+                EventManager.Instance.dic_dynamicObjects["Caico"].controller.OnActionCalled(EEventType.deafeated);
+                EventManager.Instance.dic_dynamicObjects["Caico"].objectRelated.GetComponent<Collider>().enabled = false;
+                GameManager.Instance.ResetLevel();
+            }
             UI_Items.Instance.battleItems.ChangeImageAndActive(UI_Items.Instance.battleItems.spriteWin);
+        }
         
         StartCoroutine(QuitText());
 

@@ -35,7 +35,7 @@ public class GameManager : Manager<GameManager>
 
     private void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         StartCoroutine(StartGameAudio());
     }
