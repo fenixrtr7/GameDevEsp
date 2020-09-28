@@ -15,6 +15,12 @@ namespace UI
         public GameObject pnlBattle;
         public GameObject pnlLoading;
         public GameObject pnlCombat;
+        public Image imageFade;
+
+        public void FadePanel()
+        {
+            
+        }
     }
 
     [System.Serializable]
