@@ -10,7 +10,7 @@ public class ArrowControl : MonoBehaviour
 
     public TypeArrow typeArrow;
 
-    public int damage = 20;
+    public int damage = 5;
     
     public bool isEspecial = false;
 

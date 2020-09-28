@@ -45,7 +45,7 @@ public class Spawner : Manager<Spawner>
             }
 
             timeToSpawn = duel.keys[i].tempo - duel.keys[timeStamp].tempo;
-            Debug.Log( i + " Time spawn " + timeToSpawn);
+            //Debug.Log( i + " Time spawn " + timeToSpawn);
 
             yield return new WaitForSeconds(timeToSpawn);
 

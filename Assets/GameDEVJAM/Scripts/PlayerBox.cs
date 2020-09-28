@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerBox : MonoBehaviour
 {
     bool isInBox = false;
-    int contador = 0;
+    //int contador = 0;
     LifePlayer lifePlayer;
     LifeEnemy lifeEnemy;
     TypeArrow typeArrow = TypeArrow.NONE;
@@ -22,15 +22,6 @@ public class PlayerBox : MonoBehaviour
 
     private void Update()
     {
-        if (contador == 2)
-        {
-            isInBox = true;
-        }
-        else
-        {
-            isInBox = false;
-        }
-
         if (typeArrow != TypeArrow.NONE)
         {
             //Debug.Log("Pasamos");
@@ -56,7 +47,7 @@ public class PlayerBox : MonoBehaviour
             {
                 lifePlayer.QuitLife(arrowSongDirections.damage);
                 currentArrow.gameObject.SetActive(false);
-                
+
             }
             else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && (typeArrow == TypeArrow.DOWN) && isInBox)
             {
@@ -135,15 +126,10 @@ public class PlayerBox : MonoBehaviour
     {
         if (other.CompareTag("Arrow"))
         {
-            contador++;
-            Debug.Log("Contador " + contador);
+            isInBox = true;
+            currentArrow = other.GetComponent<ArrowControl>();
+            typeArrow = currentArrow.typeArrow;
 
-            if (contador == 1)
-            {
-                currentArrow = other.GetComponent<ArrowControl>();
-                typeArrow = currentArrow.typeArrow;
-                Debug.Log("Arrow " + typeArrow);
-            }
         }
     }
 
@@ -151,13 +137,17 @@ public class PlayerBox : MonoBehaviour
     {
         if (other.CompareTag("Arrow"))
         {
-            contador--;
-
-            if (contador == 0)
-            {
-                currentArrow = null;
-                typeArrow = TypeArrow.NONE;
-            }
+            isInBox = false;
+            currentArrow = null;
+            typeArrow = TypeArrow.NONE;
         }
     }
+
+    // private void OnTriggerStay2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Arrow"))
+    //     {
+            
+    //     }
+    // }
 }

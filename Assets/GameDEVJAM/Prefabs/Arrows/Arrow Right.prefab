@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4107777445074303559}
   - component: {fileID: 4107777445074303556}
-  - component: {fileID: 4107777445074303557}
   - component: {fileID: 4107777445074303558}
   m_Layer: 8
   m_Name: Arrow Right
@@ -44,10 +43,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2507241, y: -0.13760996}
+  m_Offset: {x: 0.02252686, y: -0.22538376}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -58,33 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14146852, y: 2.6705956}
-  m_EdgeRadius: 0
---- !u!61 &4107777445074303557
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4107777445074303577}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.3972733, y: -0.0645653}
-  m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.2, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15868723, y: 2.5340889}
+  m_Size: {x: 3.111009, y: 2.8871462}
   m_EdgeRadius: 0
 --- !u!114 &4107777445074303558
 MonoBehaviour:

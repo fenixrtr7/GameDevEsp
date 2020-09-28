@@ -41,10 +41,10 @@ public class ReadJson : MonoBehaviour
         if (data == null)
             return;
 
-        foreach (DataArrow d in data.listData)
-        {
-            Debug.Log("Time Stamp " + d.timestamp);
-        }
+        // foreach (DataArrow d in data.listData)
+        // {
+        //     Debug.Log("Time Stamp " + d.timestamp);
+        // }
     }
 }
 

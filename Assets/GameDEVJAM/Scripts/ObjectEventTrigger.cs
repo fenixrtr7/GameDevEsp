@@ -17,7 +17,7 @@ public class ObjectEventTrigger : MonoBehaviour
     {
         if (eventController && Input.GetButtonDown("Jump"))
         {
-            Debug.Log("Interactuar");
+            //Debug.Log("Interactuar");
             eventController.OnActionCalled(EEventType.chat, true);
             UIManager.Instance.HideTriggerMessage();
             eventController = null;
