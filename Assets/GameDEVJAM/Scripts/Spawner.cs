@@ -24,7 +24,7 @@ public class Spawner : Manager<Spawner>
         StopCoroutine(spawnArrorDuelCoroutine);
         spawnArrorDuelCoroutine = null;
     }
-    
+
     public IEnumerator SpawnArrowDuel()
     {
         int timeStamp = 0;
@@ -48,17 +48,68 @@ public class Spawner : Manager<Spawner>
             //Debug.Log( i + " Time spawn " + timeToSpawn);
 
             yield return new WaitForSeconds(timeToSpawn);
+            int index = CombatManager.Instance.enemyIndex;
 
-            
+            if (index == 0)
+            {
+                if (duel.keys[i].direction == TypeArrow.DOWN)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Charlie"].objectRelated.GetComponent<CharacterAnimaController>().Dance_01();
+                } else if (duel.keys[i].direction == TypeArrow.LEFT)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Charlie"].objectRelated.GetComponent<CharacterAnimaController>().Dance_02();
+                }
+                else if (duel.keys[i].direction == TypeArrow.UP)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Charlie"].objectRelated.GetComponent<CharacterAnimaController>().Dance_03();
+                } else if (duel.keys[i].direction == TypeArrow.RIGHT)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Charlie"].objectRelated.GetComponent<CharacterAnimaController>().Dance_04();
+                }
+            }
+            else if (index == 1)
+            {
+                if (duel.keys[i].direction == TypeArrow.DOWN)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Brad"].objectRelated.GetComponent<CharacterAnimaController>().Dance_01();
+                } else if (duel.keys[i].direction == TypeArrow.UP)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Brad"].objectRelated.GetComponent<CharacterAnimaController>().Dance_02();
+                }
+                else if (duel.keys[i].direction == TypeArrow.RIGHT)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Brad"].objectRelated.GetComponent<CharacterAnimaController>().Dance_03();
+                } else if (duel.keys[i].direction == TypeArrow.LEFT)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Brad"].objectRelated.GetComponent<CharacterAnimaController>().Dance_04();
+                }
+            }
+            else if (index == 2)
+            {
+                if (duel.keys[i].direction == TypeArrow.DOWN)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Caico"].objectRelated.GetComponent<CharacterAnimaController>().Dance_01();
+                } else if (duel.keys[i].direction == TypeArrow.UP)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Caico"].objectRelated.GetComponent<CharacterAnimaController>().Dance_02();
+                }
+                else if (duel.keys[i].direction == TypeArrow.RIGHT)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Caico"].objectRelated.GetComponent<CharacterAnimaController>().Dance_03();
+                } else if (duel.keys[i].direction == TypeArrow.LEFT)
+                {
+                    EventManager.Instance.dic_dynamicObjects["Caico"].objectRelated.GetComponent<CharacterAnimaController>().Dance_04();
+                }
+            }
 
             duel.keys[i].objectPrefab = duel.keys[i].AssignSprite();
-            Debug.Log("I " + i);
+            //Debug.Log("I " + i);
             Instantiate(duel.keys[i].objectPrefab, this.transform.position, Quaternion.identity);
         }
 
         //Debug.Log("End spawn");
         yield return new WaitForSeconds(2.1f);
-        
+
         CombatManager.Instance.EndCombat(false);
     }
 

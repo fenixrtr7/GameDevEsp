@@ -34,20 +34,20 @@ public class PlayerBox : Manager<PlayerBox>
             //Debug.Log("Pasamos");
             if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) && typeArrow == TypeArrow.DOWN)
             {
-                ConditionKey();
+                ConditionKey(1);
             }
 
             else if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && typeArrow == TypeArrow.UP)
             {
-                ConditionKey();
+                ConditionKey(2);
             }
             else if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && typeArrow == TypeArrow.RIGHT)
             {
-                ConditionKey();
+                ConditionKey(3);
             }
             else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && typeArrow == TypeArrow.LEFT)
             {
-                ConditionKey();
+                ConditionKey(0);
             }
 
             else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && (typeArrow == TypeArrow.UP) && isInBox)
@@ -122,10 +122,26 @@ public class PlayerBox : Manager<PlayerBox>
 
     }
 
-    void ConditionKey()
+    void ConditionKey(int d = -1)
     {
         if (isInBox)
         {
+            if (d == 0)
+            {
+                GameManager.Instance.player.GetComponent<CharacterAnimaController>().Dance_01();
+            }
+            else if (d == 1)
+            {
+                GameManager.Instance.player.GetComponent<CharacterAnimaController>().Dance_02();
+            }
+            else if (d == 2)
+            {
+                GameManager.Instance.player.GetComponent<CharacterAnimaController>().Dance_03();
+            }
+            else if (d == 3)
+            {
+                GameManager.Instance.player.GetComponent<CharacterAnimaController>().Dance_04();
+            }
             //listIndex.Add(listCorouIndex);
             if (!isPressed)
             {

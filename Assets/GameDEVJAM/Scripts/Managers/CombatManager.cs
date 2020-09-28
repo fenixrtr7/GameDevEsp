@@ -18,7 +18,7 @@ public class CombatManager : Manager<CombatManager>
         combat.SetActive(true);
     }
 
-    int enemyIndex = 0;
+    public int enemyIndex = 0;
     public void EndCombat(bool lose)
     {
         if (!lose)
