@@ -1,0 +1,780 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c995a14e0f0190a419717b6e5af1b910, type: 3}
+  m_Name: FinalBoss
+  m_EditorClassIdentifier: 
+  damage: 10
+  keys:
+  - direction: 0
+    tempo: 0.93
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 2.34
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 3.75
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 5.16
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 6.57
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 7.99
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 9.4
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 10.81
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 12.22
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 13.63
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 15.05
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 15.75
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 16.46
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 17.87
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 18.57
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 19.28
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 20.696
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 21.402
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 22.108
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 23.52
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 26.34
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 27.75
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 28.45
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 29.5
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 30.57
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 31.28
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 31.98
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 32.69
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 33.04
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 34.11
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 34.81
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 35.16
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 36.22
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 36.57
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 37.63
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 37.96
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 39.05
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 39.76
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 40.46
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 40.81
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 41.87
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 42.58
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 43.29
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 43.99
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 44.34
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 45.4
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 46.11
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 46.81
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 47.51
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 48.21
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 49.61
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 50.32
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 51.01
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 51.76
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 51.93
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 52.81
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 54.58
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 54.93
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 55.63
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 55.98
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 56.34
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 56.7
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 57.4
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 58.12
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 58.81
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 59.17
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 59.52
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 60.23
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 60.9
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 61.63
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 62.33
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 63.03
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 63.2
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 63.73
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 64.26
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 65.5
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 66.21
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 66.91
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 67.62
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 68
+    visible: 0
+    isRandom: 0
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 68.7
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 69.41
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 70.12
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 70.47
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 70.82
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 71.53
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 71.7
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 73.29
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 76.47
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 77.88
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 79.29
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 80
+    visible: 0
+    isRandom: 1
+    isSpecial: 1
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 0
+    tempo: 81.41
+    visible: 0
+    isRandom: 1
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 82.82
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 83.53
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 3
+    tempo: 84.59
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 84.94
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 3
+    tempo: 86
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 86.35
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 4
+    tempo: 87.06
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 87.41
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 3
+    tempo: 87.76
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 88.12
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 88.82
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 3
+    tempo: 89.18
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 4
+    tempo: 89.53
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 1
+    tempo: 89.88
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 2
+    tempo: 90.23
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  - direction: 3
+    tempo: 91.29
+    visible: 0
+    isRandom: 0
+    isSpecial: 0
+    damage: 0
+    objectPrefab: {fileID: 0}
+  song: {fileID: 0}
