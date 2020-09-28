@@ -193,7 +193,14 @@ public class NPCController : MonoBehaviour
 
             Vector3 pos = new Vector3(x, 0, y);
 
-            MoveCharacterTo(new Vector3(playerPos.x - Random.Range(-3.0f,3.0f), 0, playerPos.z + 2));
+            MoveCharacterTo(new Vector3(playerPos.x - Random.Range(-3.0f,3.0f), 0, playerPos.z + 2 + Random.Range(-0.50f, 0.50f)));
         }
     }
+
+    public void GoRandom()
+    {
+        MoveCharacterTo(GetNewRandomPosition());
+    }
+
+        
 }
