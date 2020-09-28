@@ -6,13 +6,16 @@ tpsheetFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_barraVida.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.tpsheet
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando.tpsheet
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando_izq.tpsheet
 textureFileNames:
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_banio.png
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_bar.png
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_barraVida.png
 - Assets/GameDEVJAM/Sprites/Atlas/atlas_intro.png
 - Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando.png
+- Assets/GameDEVJAM/Sprites/Atlas/jugador_caminando_izq.png
 normalmapFileNames:
+- 
 - 
 - 
 - 

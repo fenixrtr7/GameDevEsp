@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:5a3a736aef4025bf3d80b7d3f0d5d95f:61cbfe63f4bb1529a32adf8c75e412b3:47a550d810c1d1b101cf0bb63746d948$
+#
+:format=40300
+:texture=jugador_caminando_izq.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Caminado-Izq_00003_00003;1;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003_00004;1;1021;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003_00005;1;507;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003_00006;515;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003_00007;1029;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003_00008;515;1021;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003_00009;515;507;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00003_00010;1029;1021;512;512; 0.5;0; 0;0;0;0

@@ -23,7 +23,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        
+        if (rb.velocity.magnitude > 0f)
+            anim.Walking(true);
+        else
+            anim.Walking(false);
     }
 
     void FixedUpdate()
@@ -34,14 +37,9 @@ public class PlayerController : MonoBehaviour
             float moveVertical = Input.GetAxis("Vertical");
 
             if (moveHorizontal > 0)
-                characterSprite.flipX = false;
+                anim.flipX = false;
             else if (moveHorizontal < 0)
-                characterSprite.flipX = true;
-
-            if (rb.velocity.magnitude > 0f)
-                anim.Walking(true);
-            else
-                anim.Walking(false);
+                anim.flipX = true;
 
             Vector3 movement = new Vector3(moveHorizontal, 0f, moveVertical);
             rb.velocity = movement * speed;

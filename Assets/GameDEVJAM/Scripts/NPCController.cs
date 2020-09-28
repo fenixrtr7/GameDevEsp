@@ -11,7 +11,7 @@ public class NPCController : MonoBehaviour
 
     public Vector2 rangeTimer;
     public Transform characterSprite;
-    public bool isPauseSequence = false;
+    //public bool isPauseSequence = false;
 
     private bool randomMovement = false;
     private bool isMoving = false;
@@ -72,14 +72,13 @@ public class NPCController : MonoBehaviour
         if (Vector3.Distance(transform.position, targetPosition) < 0.3 && isMoving)
         {
             isMoving = false;
-            if(GameManager.Instance.CurrentGameState != GameManager.GameState.COMBAT)
-                ContinueSecuence();
-        }
-
-        if (GameManager.Instance.CurrentGameState == GameManager.GameState.RUNNING && isPauseSequence)
-        {
             ContinueSecuence();
         }
+
+        /*if (GameManager.Instance.CurrentGameState == GameManager.GameState.RUNNING && isPauseSequence)
+        {
+            ContinueSecuence();
+        }*/
 
         if (isMoving)
         {
@@ -127,7 +126,7 @@ public class NPCController : MonoBehaviour
             {
                 case 1:
                     //walk
-                    if (type == Type.WALKER)
+                    if (type == Type.WALKER && GameManager.Instance.CurrentGameState != GameManager.GameState.COMBAT)
                         MoveCharacterTo(GetNewRandomPosition());
                     break;
                 case 2:
@@ -165,13 +164,13 @@ public class NPCController : MonoBehaviour
 
     public void PauseSequence()
     {
-        isPauseSequence = true;
+        //isPauseSequence = true;
         newSequ.Pause();
     }
 
     public void ContinueSecuence()
     {
-        isPauseSequence = false;
+        //isPauseSequence = false;
         newSequ.Play();
     }
 }
