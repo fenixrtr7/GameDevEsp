@@ -45,12 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yarnScripts:
-  - {fileID: 2480198943629176163, guid: b1cf3e2cc2675fe46a4655e6acad3e71, type: 3}
+  - {fileID: 2480198943629176163, guid: a68093ad50b78c6439020cfffae32158, type: 3}
   textLanguage: 
   variableStorage: {fileID: 43672888621516950}
   dialogueUI: {fileID: 0}
-  startNode: chica.Start
-  startAutomatically: 1
+  startNode: Chica.0.0
+  startAutomatically: 0
   onNodeStart:
     m_PersistentCalls:
       m_Calls: []
@@ -59,7 +59,18 @@ MonoBehaviour:
       m_Calls: []
   onDialogueComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: EndDialogCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &43672888621516950
 MonoBehaviour:
   m_ObjectHideFlags: 0

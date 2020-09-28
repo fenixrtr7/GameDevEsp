@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1326959391763575525}
+  flipX: 0
 --- !u!1 &4539013121446590616
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +388,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 4539013122658110496}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
