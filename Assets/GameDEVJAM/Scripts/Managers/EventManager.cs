@@ -22,6 +22,8 @@ public class EventManager : Manager<EventManager>
                 dic_dynamicObjects[obj.Key].controller.dialogSequence.phase++;
             if (nextEvent == EEventType.battle && obj.Value.controller.autoWatchDanceDuels)
                 dic_dynamicObjects[obj.Key].controller.OnActionCalled(EEventType.watching);
+            if (nextEvent == EEventType.deafeated && obj.Value.controller.autoWatchDanceDuels)
+                dic_dynamicObjects[obj.Key].controller.OnActionCalled(EEventType.idle);
             if (obj.Value.controller.objInteractions == null)
                 continue;
             IterateOnInteractions(obj, prevEvent, nextEvent, interacted);

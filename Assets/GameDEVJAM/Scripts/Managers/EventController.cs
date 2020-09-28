@@ -128,7 +128,7 @@ public class EventController : MonoBehaviour
             case EEventType.deafeated:
                 break;
             case EEventType.watching:
-                MoveToWathPoint();
+                this.gameObject.GetComponent<NPCController>().GoToBattle();
                 break;
             case EEventType.none:
                 break;
