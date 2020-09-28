@@ -4845,6 +4845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee40eff5261756c48a1ef902b64d68f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageEnemy: 10
+  damagePlayer: 2.5
+  spriteAro: {fileID: 21300000, guid: 2368b89c8bb76d544986794845b56bc4, type: 3}
 --- !u!50 &4544710473649382223
 Rigidbody2D:
   serializedVersion: 4

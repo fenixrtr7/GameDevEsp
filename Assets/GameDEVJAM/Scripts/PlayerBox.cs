@@ -13,6 +13,9 @@ public class PlayerBox : Manager<PlayerBox>
     ArrowControl currentArrow;
     public float damageEnemy = 10f;
     public float damagePlayer = 2.5f;
+    public Sprite spriteAro;
+    Sprite originalSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,8 @@ public class PlayerBox : Manager<PlayerBox>
         lifeEnemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<LifeEnemy>();
 
         arrowSongDirections = Spawner.Instance.duel;
+
+        originalSprite = this.GetComponent<SpriteRenderer>().sprite;
     }
 
     private void Update()
@@ -102,12 +107,30 @@ public class PlayerBox : Manager<PlayerBox>
         lifePlayer.QuitLife(damagePlayer);
         currentArrow.gameObject.SetActive(false);
     }
+    List<Coroutine> listCorou = new List<Coroutine>();
+    bool isPressed = false;
+
+    IEnumerator ReturnOriginalSprite()
+    {
+        isPressed = true;
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteAro;
+        yield return new WaitForSeconds(0.03f);
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = originalSprite;
+
+        listCorou.Remove(listCorou[0]);
+        isPressed = false;
+
+    }
 
     void ConditionKey()
     {
         if (isInBox)
         {
-            //Debug.Log("Punto");
+            //listIndex.Add(listCorouIndex);
+            if (!isPressed)
+            {
+                listCorou.Add(StartCoroutine(ReturnOriginalSprite()));
+            }
 
             if (currentArrow.isEspecial)
             {
