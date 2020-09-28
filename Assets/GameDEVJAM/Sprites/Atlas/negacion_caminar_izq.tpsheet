@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:7fb84a4b44a10602a96eade2c87cd8e6:6a58990ed3f4c9aaa5a0b5ca76160707:cfc3de33e3d68f914140ef24fb07c435$
+#
+:format=40300
+:texture=negacion_caminar_izq.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Caminado-Izq_00003;1;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00004;1;1021;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00005;1;507;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00006;515;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00007;1029;1535;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00008;515;1021;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00009;515;507;512;512; 0.5;0; 0;0;0;0
+Caminado-Izq_00010;1029;1021;512;512; 0.5;0; 0;0;0;0

@@ -1,0 +1,23 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:354043fa829c62f7a27ccbab721d2e1b:397da0b73432f3a502858e457e1aa3fd:ac8a0199e92af6007d04006f57a49d7b$
+#
+:format=40300
+:texture=negacion_caminar_der.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Caminado_00003;1;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00004;1;1021;512;512; 0.5;0; 0;0;0;0
+Caminado_00005;1;507;512;512; 0.5;0; 0;0;0;0
+Caminado_00006;515;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00007;1029;1535;512;512; 0.5;0; 0;0;0;0
+Caminado_00008;515;1021;512;512; 0.5;0; 0;0;0;0
+Caminado_00009;515;507;512;512; 0.5;0; 0;0;0;0
+Caminado_00010;1029;1021;512;512; 0.5;0; 0;0;0;0
